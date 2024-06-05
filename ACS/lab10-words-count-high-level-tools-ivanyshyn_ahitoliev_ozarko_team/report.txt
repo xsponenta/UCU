@@ -1,0 +1,1419 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 16K of event 'cpu-clock:ppp'
+# Event count (approx.): 4119250000
+#
+# Overhead  Command          Shared Object                       Symbol                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+# ........  ...............  ..................................  .......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+#
+     7.56%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::copyFrom(icu_72::UnicodeString const&, signed char)
+     5.80%  countwords_par_  libc.so.6                           [.] __memmove_avx_unaligned_erms
+     4.36%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::~UnicodeString()
+     3.67%  countwords_par_  libc.so.6                           [.] __strlen_avx2
+     2.86%  countwords_par_  libc.so.6                           [.] malloc
+     2.85%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::releaseArray()
+     2.59%  countwords_par_  libc.so.6                           [.] pthread_mutex_lock@@GLIBC_2.2.5
+     2.00%  countwords_par_  libc.so.6                           [.] _int_free
+     1.94%  countwords_par_  libc.so.6                           [.] _int_malloc
+     1.75%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DateFormatSymbols::dispose()
+     1.65%  countwords_par_  libc.so.6                           [.] pthread_mutex_unlock@@GLIBC_2.2.5
+     1.59%  countwords_par_  libc.so.6                           [.] __strcpy_chk
+     1.40%  countwords_par_  libc.so.6                           [.] __strcmp_avx2
+     1.40%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DateFormatSymbols::assignArray(icu_72::UnicodeString*&, int&, icu_72::UnicodeString const*, int)
+     1.38%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::LocalizedNumberFormatter::lnfCopyHelper(icu_72::number::LocalizedNumberFormatter const&, UErrorCode&)
+     1.37%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Replaceable::~Replaceable()
+     1.11%  countwords_par_  libc.so.6                           [.] cfree@GLIBC_2.2.5
+     1.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DecimalFormatSymbols::~DecimalFormatSymbols()
+     0.90%  countwords_par_  libc.so.6                           [.] __strchr_avx2
+     0.90%  countwords_par_  libstdc++.so.6.0.32                 [.] std::locale::_Impl::~_Impl()
+     0.88%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DecimalFormatSymbols::operator=(icu_72::DecimalFormatSymbols const&)
+     0.76%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::operator=(icu_72::Locale const&)
+     0.76%  countwords_par_  libstdc++.so.6.0.32                 [.] std::locale::_Impl::_Impl(std::locale::_Impl const&, unsigned long)
+     0.67%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::CharString::append(char, UErrorCode&)
+     0.64%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::init(char const*, signed char)
+     0.63%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DecimalFormatSymbols::DecimalFormatSymbols(icu_72::DecimalFormatSymbols const&)
+     0.56%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::fastCopyFrom(icu_72::UnicodeString const&)
+     0.56%  countwords_par_  libicuuc.so.72.1                    [.] u_strFromUTF8WithSub_72
+     0.56%  countwords_par_  libicuuc.so.72.1                    [.] ustr_hashCharsN_72
+     0.53%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::MeasureUnit::initCurrency(icu_72::StringPiece)
+     0.52%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::NumberPropertyMapper::oldToNew(icu_72::number::impl::DecimalFormatProperties const&, icu_72::DecimalFormatSymbols const&, icu_72::number::impl::DecimalFormatWarehouse&, icu_72::number::impl::DecimalFormatProperties*, UErrorCode&)
+     0.51%  countwords_par_  libc.so.6                           [.] __strcpy_avx2
+     0.50%  countwords_par_  [kernel.kallsyms]                   [k] rep_movs_alternative
+     0.50%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DecimalFormat::touch(UErrorCode&)
+     0.50%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::doAppend(char16_t const*, int, int)
+     0.50%  countwords_par_  libc.so.6                           [.] _int_free_merge_chunk
+     0.49%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::LocalizedNumberFormatter::~LocalizedNumberFormatter()
+     0.44%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::CharString::ensureCapacity(int, int, UErrorCode&)
+     0.41%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::setToBogus()
+     0.38%  countwords_par_  libicuuc.so.72.1                    [.] uprv_free_72
+     0.37%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::~Locale()
+     0.36%  countwords_par_  libicuuc.so.72.1                    [.] umtx_lock_72
+     0.35%  countwords_par_  libc.so.6                           [.] unlink_chunk.isra.0
+     0.33%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::StringPiece::compare(icu_72::StringPiece)
+     0.32%  countwords_par_  libicuuc.so.72.1                    [.] res_getTableItemByKey_72
+     0.32%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::getDefault()
+     0.30%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DecimalFormat::DecimalFormat(icu_72::DecimalFormat const&)
+     0.30%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::MeasureUnit::~MeasureUnit()
+     0.30%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::NumberPropertyMapper::create(icu_72::number::impl::DecimalFormatProperties const&, icu_72::DecimalFormatSymbols const&, icu_72::number::impl::DecimalFormatWarehouse&, icu_72::number::impl::DecimalFormatProperties&, UErrorCode&)
+     0.30%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::PropertiesAffixPatternProvider::setTo(icu_72::number::impl::DecimalFormatProperties const&, UErrorCode&)
+     0.30%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::SymbolsWrapper::doCleanup()
+     0.30%  countwords_par_  libicuuc.so.72.1                    [.] ulocimp_getLanguage_72(char const*, char const**, UErrorCode&)
+     0.29%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleDateFormat::parsePattern()
+     0.29%  countwords_par_  libicuuc.so.72.1                    [.] ucurr_forLocale_72
+     0.29%  countwords_par_  libstdc++.so.6.0.32                 [.] __dynamic_cast
+     0.28%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::CharString::append(char const*, int, UErrorCode&)
+     0.28%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::operator=(icu_72::Locale&&)
+     0.27%  countwords_par_  libc.so.6                           [.] __strncpy_avx2
+     0.26%  countwords_par_  [kernel.kallsyms]                   [k] syscall_enter_from_user_mode
+     0.26%  countwords_par_  libicuuc.so.72.1                    [.] umtx_unlock_72
+     0.25%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::UnicodeString::~UnicodeString()@plt
+     0.25%  countwords_par_  libicuuc.so.72.1                    [.] ures_getByKeyWithFallback_72
+     0.25%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::IntegerWidth::truncateAt(int)
+     0.24%  countwords_par_  libc.so.6                           [.] __GI___fstatat64
+     0.24%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::CurrencyUnit::CurrencyUnit(icu_72::ConstChar16Ptr, UErrorCode&)
+     0.24%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DateFormatSymbols::copyData(icu_72::DateFormatSymbols const&)
+     0.24%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::UnicodeString::fastCopyFrom(icu_72::UnicodeString const&)@plt
+     0.22%  countwords_par_  libc.so.6                           [.] llseek@GLIBC_2.2.5
+     0.22%  countwords_par_  libicuuc.so.72.1                    [.] __strcpy_chk@plt
+     0.22%  countwords_par_  libicuuc.so.72.1                    [.] uhash_compareChars_72
+     0.21%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UMemory::operator delete(void*)
+     0.21%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::LocalizedNumberFormatter::LocalizedNumberFormatter(icu_72::number::impl::MacroProps&&, icu_72::Locale const&)
+     0.21%  countwords_par_  libicuuc.so.72.1                    [.] uloc_getKeywordValue_72
+     0.20%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::setToBogus()
+     0.19%  countwords_par_  [kernel.kallsyms]                   [k] __do_softirq
+     0.19%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::LocalizedNumberFormatter::LocalizedNumberFormatter(icu_72::number::NumberFormatterSettings<icu_72::number::LocalizedNumberFormatter> const&)
+     0.19%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::DecimalFormatProperties::_equals(icu_72::number::impl::DecimalFormatProperties const&, bool) const
+     0.19%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000105485
+     0.19%  countwords_par_  libstdc++.so.6.0.32                 [.] std::locale::_Impl::_M_install_facet(std::locale::id const*, std::locale::facet const*)
+     0.19%  countwords_par_  libc.so.6                           [.] _int_free_maybe_consolidate
+     0.19%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::MeasureUnit::operator=(icu_72::MeasureUnit&&)
+     0.19%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::AffixUtils::hasCurrencySymbols(icu_72::UnicodeString const&, UErrorCode&)
+     0.19%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::SharedObject::removeRef() const
+     0.18%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleDateFormat::construct(icu_72::DateFormat::EStyle, icu_72::DateFormat::EStyle, icu_72::Locale const&, UErrorCode&)
+     0.18%  countwords_par_  libicuuc.so.72.1                    [.] uprv_isASCIILetter_72
+     0.18%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000105441
+     0.18%  countwords_par_  libc.so.6                           [.] strlen@plt
+     0.18%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DecimalFormat::~DecimalFormat()
+     0.18%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::MeasureUnit::operator=(icu_72::MeasureUnit const&)
+     0.18%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::UnicodeString(icu_72::UnicodeString const&)
+     0.18%  countwords_par_  libicuuc.so.72.1                    [.] u_UCharsToChars_72
+     0.18%  countwords_par_  libicuuc.so.72.1                    [.] ulocimp_getKeywordValue_72
+     0.17%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::OlsonTimeZone::operator=(icu_72::OlsonTimeZone const&)
+     0.17%  countwords_par_  libicuuc.so.72.1                    [.] res_countArrayItems_72
+     0.17%  countwords_par_  libicuuc.so.72.1                    [.] ulocimp_getRegionForSupplementalData_72
+     0.17%  countwords_par_  libicuuc.so.72.1                    [.] uprv_isInvariantUString_72
+     0.17%  countwords_par_  libicuuc.so.72.1                    [.] uprv_malloc_72
+     0.16%  countwords_par_  libicuuc.so.72.1                    [.] u_strlen_72
+     0.16%  countwords_par_  [kernel.kallsyms]                   [k] finish_task_switch.isra.0
+     0.16%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::GregorianCalendar::~GregorianCalendar()
+     0.16%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::StringProp::operator=(icu_72::number::impl::StringProp&&)
+     0.16%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UObject::~UObject()
+     0.16%  countwords_par_  libicuuc.so.72.1                    [.] res_getStringNoTrace_72
+     0.16%  countwords_par_  libicuuc.so.72.1                    [.] strlen@plt
+     0.15%  countwords_par_  [kernel.kallsyms]                   [k] memset_orig
+     0.15%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::StringPiece::StringPiece(char const*)
+     0.15%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnifiedCache::addHardRef(icu_72::SharedObject const*) const
+     0.15%  countwords_par_  libicuuc.so.72.1                    [.] memcpy@plt
+     0.15%  countwords_par_  libicuuc.so.72.1                    [.] uloc_getCountry_72
+     0.15%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::NumberFormatter::with()
+     0.15%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::Locale()
+     0.15%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::SimpleFormatter::applyPatternMinMaxArguments(icu_72::UnicodeString const&, int, int, UErrorCode&)
+     0.15%  countwords_par_  libicuuc.so.72.1                    [.] ulocimp_getScript_72(char const*, char const**, UErrorCode&)
+     0.15%  countwords_par_  libicuuc.so.72.1                    [.] uprv_asciitolower_72
+     0.15%  countwords_par_  libicuuc.so.72.1                    [.] ures_getByIndex_72
+     0.14%  countwords_par_  [kernel.kallsyms]                   [k] __d_lookup_rcu
+     0.14%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UMemory::operator new[](unsigned long)
+     0.13%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::AffixUtils::escape(icu_72::UnicodeString const&)
+     0.13%  countwords_par_  libicuuc.so.72.1                    [.] uloc_getName_72
+     0.13%  countwords_par_  libicuuc.so.72.1                    [.] ulocimp_getCountry_72(char const*, char const**, UErrorCode&)
+     0.12%  countwords_par_  [kernel.kallsyms]                   [k] aa_dfa_match
+     0.12%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::MeasureUnit::MeasureUnit(int, int)
+     0.12%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::IntegerWidth::zeroFillTo(int)
+     0.12%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::LocalizedNumberFormatter::operator=(icu_72::number::LocalizedNumberFormatter&&)
+     0.12%  countwords_par_  libicuuc.so.72.1                    [.] u_asciiToUpper_72
+     0.12%  countwords_par_  libicuuc.so.72.1                    [.] u_strcpy_72
+     0.12%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DateFormat::create(icu_72::DateFormat::EStyle, icu_72::DateFormat::EStyle, icu_72::Locale const&)
+     0.11%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DecimalFormat::setupFastFormat()
+     0.11%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::OlsonTimeZone::clearTransitionRules()
+     0.11%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::Scale::operator=(icu_72::number::Scale&&)
+     0.11%  countwords_par_  libicuuc.so.72.1                    [.] T_CString_integerToString_72
+     0.11%  countwords_par_  libicuuc.so.72.1                    [.] free@plt
+     0.10%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000151ac0
+     0.10%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UMemory::operator delete[](void*)
+     0.10%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UMemory::operator new(unsigned long)
+     0.10%  countwords_par_  libicuuc.so.72.1                    [.] strchr@plt
+     0.10%  countwords_par_  libicuuc.so.72.1                    [.] ures_getByKey_72
+     0.10%  countwords_par_  [kernel.kallsyms]                   [k] exit_to_user_mode_loop
+     0.10%  countwords_par_  countwords_par_tbb                  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_assign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     0.10%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::MeasureUnit::MeasureUnit()
+     0.10%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleDateFormat::SimpleDateFormat(icu_72::DateFormat::EStyle, icu_72::DateFormat::EStyle, icu_72::Locale const&, UErrorCode&)
+     0.10%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::LocalizedNumberFormatter::lnfMoveHelper(icu_72::number::LocalizedNumberFormatter&&)
+     0.10%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::StringProp::~StringProp()
+     0.10%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::Locale(char const*, char const*, char const*, char const*)
+     0.10%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::Locale(icu_72::Locale const&)
+     0.10%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::UnicodeString(char16_t const*)
+     0.10%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::cloneArrayIfNeeded(int, int, signed char, int**, signed char)
+     0.10%  countwords_par_  libicuuc.so.72.1                    [.] uprv_min_72
+     0.09%  countwords_par_  [kernel.kallsyms]                   [k] _raw_spin_unlock_irqrestore
+     0.09%  countwords_par_  [kernel.kallsyms]                   [k] kmem_cache_alloc
+     0.09%  countwords_par_  libc.so.6                           [.] __memset_avx2_unaligned_erms
+     0.09%  countwords_par_  libc.so.6                           [.] __strncmp_avx2
+     0.09%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DecimalFormat::setMinimumFractionDigits(int)
+     0.09%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::LocalizedNumberFormatter::LocalizedNumberFormatter(icu_72::number::NumberFormatterSettings<icu_72::number::LocalizedNumberFormatter>&&)
+     0.09%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::Scale::~Scale()
+     0.09%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::UnlocalizedNumberFormatter::UnlocalizedNumberFormatter(icu_72::number::NumberFormatterSettings<icu_72::number::UnlocalizedNumberFormatter>&&)
+     0.09%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::CheckedArrayByteSink::CheckedArrayByteSink(char*, int)
+     0.09%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::SharedObject::addRef() const
+     0.09%  countwords_par_  libicuuc.so.72.1                    [.] ures_getStringByKey_72
+     0.08%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::DecimalFormatProperties::clear()
+     0.08%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnifiedCache::_poll(icu_72::CacheKeyBase const&, icu_72::SharedObject const*&, UErrorCode&) const
+     0.08%  countwords_par_  libicuuc.so.72.1                    [.] uprv_stricmp_72
+     0.08%  countwords_par_  libicuuc.so.72.1                    [.] uprv_strnicmp_72
+     0.08%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fccd
+     0.08%  countwords_par_  [kernel.kallsyms]                   [k] filemap_get_read_batch
+     0.08%  countwords_par_  [kernel.kallsyms]                   [k] link_path_walk.part.0.constprop.0
+     0.08%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::CurrencyUnit::operator=(icu_72::CurrencyUnit const&)
+     0.08%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Locale::~Locale()@plt
+     0.08%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::UMemory::operator delete[](void*)@plt
+     0.08%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::IntegerWidth::IntegerWidth(short, short, bool)
+     0.08%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000151afb
+     0.08%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnifiedCache::_get(icu_72::CacheKeyBase const&, icu_72::SharedObject const*&, void const*, UErrorCode&) const
+     0.08%  countwords_par_  libicuuc.so.72.1                    [.] u_terminateChars_72
+     0.07%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Calendar::operator=(icu_72::Calendar const&)
+     0.07%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::MeasureUnit::MeasureUnit(icu_72::MeasureUnit&&)
+     0.07%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::StringProp::StringProp(icu_72::number::impl::StringProp&&)
+     0.07%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::resolveCurrency(icu_72::number::impl::DecimalFormatProperties const&, icu_72::Locale const&, UErrorCode&)
+     0.07%  countwords_par_  libicuuc.so.72.1                    [.] res_findResource_72
+     0.07%  countwords_par_  libicuuc.so.72.1                    [.] u_terminateUChars_72
+     0.07%  countwords_par_  [kernel.kallsyms]                   [k] copy_from_kernel_nofault_allowed
+     0.07%  countwords_par_  [kernel.kallsyms]                   [k] kmem_cache_free
+     0.07%  countwords_par_  [kernel.kallsyms]                   [k] step_into
+     0.07%  countwords_par_  libc.so.6                           [.] __sched_yield
+     0.07%  countwords_par_  libc.so.6                           [.] read
+     0.07%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Calendar::setTimeInMillis(double, UErrorCode&)
+     0.07%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::PropertiesAffixPatternProvider::hasCurrencySign() const
+     0.07%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::LocaleBased::setLocaleIDs(char const*, char const*)
+     0.07%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnifiedCache::getInstance(UErrorCode&)
+     0.07%  countwords_par_  libicuuc.so.72.1                    [.] uhash_find_72
+     0.07%  countwords_par_  libstdc++.so.6.0.32                 [.] std::locale::operator=(std::locale const&)
+     0.06%  countwords_par_  [vdso]                              [.] __vdso_gettimeofday
+     0.06%  countwords_par_  [vdso]                              [.] 0x000000000000086c
+     0.06%  countwords_par_  libc.so.6                           [.] __GI___libc_open
+     0.06%  countwords_par_  libc.so.6                           [.] getenv
+     0.06%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::MeasureUnit::MeasureUnit(icu_72::MeasureUnit const&)
+     0.06%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleDateFormat::initialize(icu_72::Locale const&, UErrorCode&)
+     0.06%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleTimeZone::operator=(icu_72::SimpleTimeZone const&)
+     0.06%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::DecimalFormatProperties::equalsDefaultExceptFastFormat() const
+     0.06%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::StringProp::operator=(icu_72::number::impl::StringProp const&)
+     0.06%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::SymbolsWrapper::doCopyFrom(icu_72::number::impl::SymbolsWrapper const&)
+     0.06%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::SymbolsWrapper::doMoveFrom(icu_72::number::impl::SymbolsWrapper&&)
+     0.06%  countwords_par_  libicui18n.so.72.1                  [.] 0x000000000016069c
+     0.06%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::operator==(icu_72::Locale const&) const
+     0.06%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::allocate(int)
+     0.06%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::operator=(icu_72::UnicodeString const&)
+     0.06%  countwords_par_  libicuuc.so.72.1                    [.] ures_getSize_72
+     0.06%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000135791
+     0.05%  countwords_par_  [kernel.kallsyms]                   [k] __fget_light
+     0.05%  countwords_par_  [kernel.kallsyms]                   [k] cache_from_obj
+     0.05%  countwords_par_  [kernel.kallsyms]                   [k] do_sched_yield
+     0.05%  countwords_par_  [kernel.kallsyms]                   [k] filemap_read
+     0.05%  countwords_par_  [kernel.kallsyms]                   [k] prepend_path
+     0.05%  countwords_par_  countwords_par_tbb                  [.] tbb::detail::d1::segment_table<std::atomic<tbb::detail::d1::list_node<unsigned long>*>, tbb::detail::d1::tbb_allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> >, tbb::detail::d1::concurrent_unordered_base<tbb::detail::d1::concurrent_unordered_map_traits<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, tbb::detail::d1::tbb_allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> >, false> >::unordered_segment_table, 63ul>::clear()
+     0.05%  countwords_par_  libc.so.6                           [.] __mbrtowc
+     0.05%  countwords_par_  libc.so.6                           [.] __mktime_internal
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] __dynamic_cast@plt
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Calendar::createInstance(icu_72::TimeZone*, icu_72::Locale const&, UErrorCode&)
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DecimalFormat::setParseIntegerOnly(signed char)
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::LocalizedNumberFormatter::getDecimalFormatSymbols() const
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::Grouper::forProperties(icu_72::number::impl::DecimalFormatProperties const&)
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::StringProp::StringProp(icu_72::number::impl::StringProp const&)
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::SymbolsWrapper::getDecimalFormatSymbols() const
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::SymbolsWrapper::operator=(icu_72::number::impl::SymbolsWrapper&&)
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::SymbolsWrapper::~SymbolsWrapper()
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000112d30
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001613f0
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::CacheKeyBase::~CacheKeyBase()
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::UnicodeString(int, int, int)
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnifiedCache::_fetch(UHashElement const*, icu_72::SharedObject const*&, UErrorCode&) const
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnifiedCache::removeHardRef(icu_72::SharedObject const*) const
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::ucache_hashKeys_72(UElement)
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] locale_getKeywordsStart_72
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] res_getArrayItem_72
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] strcmp@plt
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] ucln_common_registerCleanup_72
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] uloc_getBaseName_72
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] ures_open_72
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a910
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fca9
+     0.05%  countwords_par_  [kernel.kallsyms]                   [k] generic_permission
+     0.05%  countwords_par_  countwords_par_tbb                  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)
+     0.05%  countwords_par_  libc.so.6                           [.] memcpy@@GLIBC_2.14@plt
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DecimalFormat::clone() const
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DecimalFormat::~DecimalFormat()
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::GregorianCalendar::defaultCenturyStart() const
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::OlsonTimeZone::~OlsonTimeZone()
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000151ae1
+     0.05%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001d1050
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::CheckedArrayByteSink::Append(char const*, int)
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::initBaseName(UErrorCode&)
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::operator+(icu_72::UnicodeString const&, icu_72::UnicodeString const&)
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] ures_getLocaleByType_72
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fcbf
+     0.05%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fd00
+     0.05%  countwords_par_  libstdc++.so.6.0.32                 [.] operator delete(void*, unsigned long)
+     0.05%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::__cxx11::path::_List::_List(std::filesystem::__cxx11::path::_List const&)
+     0.05%  countwords_par_  libstdc++.so.6.0.32                 [.] std::locale::~locale()
+     0.04%  countwords_par_  [kernel.kallsyms]                   [k] apparmor_inode_getattr
+     0.04%  countwords_par_  countwords_par_tbb                  [.] read_files(std::pair<std::filesystem::__cxx11::directory_entry, bool>&)
+     0.04%  countwords_par_  countwords_par_tbb                  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()
+     0.04%  countwords_par_  libc.so.6                           [.] __GI___fcntl64_nocancel
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DateFormatSymbols::getLocale(ULocDataLocaleType, UErrorCode&) const
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::GregorianCalendar::clone() const
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::OlsonTimeZone::clone() const
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::OlsonTimeZone::deleteTransitionRules()
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleDateFormat::initFastNumberFormatters(UErrorCode&)
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::UObject::~UObject()@plt
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::SymbolsWrapper::setTo(icu_72::DecimalFormatSymbols const&)
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::CharString::extract(char*, int, UErrorCode&) const
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::CheckedArrayByteSink::~CheckedArrayByteSink()
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::hashCode() const
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000105540
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a946
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc20
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131720
+     0.04%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::__cxx11::path::_M_split_cmpts()
+     0.04%  countwords_par_  libstdc++.so.6.0.32                 [.] std::locale::id::_M_id() const
+     0.04%  countwords_par_  [kernel.kallsyms]                   [k] __check_heap_object
+     0.04%  countwords_par_  [kernel.kallsyms]                   [k] __schedule
+     0.04%  countwords_par_  [kernel.kallsyms]                   [k] __virt_addr_valid
+     0.04%  countwords_par_  [kernel.kallsyms]                   [k] copy_from_kernel_nofault
+     0.04%  countwords_par_  [kernel.kallsyms]                   [k] inode_permission
+     0.04%  countwords_par_  [kernel.kallsyms]                   [k] path_init
+     0.04%  countwords_par_  [kernel.kallsyms]                   [k] prepend_copy
+     0.04%  countwords_par_  [kernel.kallsyms]                   [k] security_inode_permission
+     0.04%  countwords_par_  [kernel.kallsyms]                   [k] strncpy_from_user
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Calendar::~Calendar()
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::CurrencyUnit::CurrencyUnit()
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DateFormat::DateFormat()
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::GregorianCalendar::getType() const
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Locale::operator=(icu_72::Locale const&)@plt
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleDateFormat::initNumberFormatters(icu_72::Locale const&, UErrorCode&)
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleDateFormat::~SimpleDateFormat()
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::TimeZone::forLocaleOrDefault(icu_72::Locale const&)
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::UMemory::operator delete(void*)@plt
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::UMemory::operator new[](unsigned long)@plt
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::UnicodeString::operator=(icu_72::UnicodeString const&)@plt
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::LocalizedNumberFormatter::resetCompiled()
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::DecimalFormatProperties::DecimalFormatProperties()
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001163bc
+     0.04%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000151ae6
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::Locale(icu_72::Locale&&)
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::getKeywordValue(char const*, char*, int, UErrorCode&) const
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::LocaleBased::getLocale(ULocDataLocaleType, UErrorCode&) const
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::LocaleBased::setLocaleIDs(icu_72::Locale const&, icu_72::Locale const&)
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::SimpleFormatter::format(char16_t const*, int, icu_72::UnicodeString const* const*, icu_72::UnicodeString&, icu_72::UnicodeString const*, signed char, int*, int, UErrorCode&)
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::operator=(icu_72::UnicodeString&&)
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::setCharAt(int, char16_t)
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] malloc@plt
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] memmove@plt
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] u_strncpy_72
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] uprv_add32_overflow_72
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] ures_getStringByIndex_72
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc7b
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013157d
+     0.04%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136649
+     0.04%  countwords_par_  libstdc++.so.6.0.32                 [.] __cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+     0.04%  countwords_par_  libstdc++.so.6.0.32                 [.] operator new(unsigned long)
+     0.04%  countwords_par_  libstdc++.so.6.0.32                 [.] std::_V2::system_category()
+     0.04%  countwords_par_  libtbb.so.12.9                      [.] tbb::detail::r1::deallocate_memory(void*)
+     0.03%  countwords_par_  [kernel.kallsyms]                   [k] __do_sys_newfstatat
+     0.03%  countwords_par_  [kernel.kallsyms]                   [k] aa_audit_file
+     0.03%  countwords_par_  [kernel.kallsyms]                   [k] do_isofs_readdir
+     0.03%  countwords_par_  [kernel.kallsyms]                   [k] fput
+     0.03%  countwords_par_  [kernel.kallsyms]                   [k] security_inode_getattr
+     0.03%  countwords_par_  ld-linux-x86-64.so.2                [.] do_lookup_x
+     0.03%  countwords_par_  libboost_locale.so.1.74.0           [.] operator new(unsigned long)@plt
+     0.03%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005bd66
+     0.03%  countwords_par_  libc.so.6                           [.] __libc_calloc
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Calendar::adoptTimeZone(icu_72::TimeZone*)
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::CurrencyUnit::~CurrencyUnit()
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DateFormatSymbols::createForLocale(icu_72::Locale const&, UErrorCode&)
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DecimalFormat::toNumberFormatter(UErrorCode&) const
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::GregorianCalendar::haveDefaultCentury() const
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::NumberFormat::createInstance(icu_72::Locale const&, UErrorCode&)
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::NumberFormat::operator=(icu_72::NumberFormat const&)
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::NumberFormat::setCurrency(char16_t const*, UErrorCode&)
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::NumberFormat::setMinimumFractionDigits(int)
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleDateFormat::initializeDefaultCentury()
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::TimeZone::TimeZone(icu_72::TimeZone const&)
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::TimeZone::createDefault()
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::UMemory::operator new(unsigned long)@plt
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::Precision::constructFraction(int, int)
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000112dac
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000151ada
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000151af2
+     0.03%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001d1133
+     0.03%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::SimpleFormatter::formatAndAppend(icu_72::UnicodeString const* const*, int, icu_72::UnicodeString&, int*, int, UErrorCode&) const
+     0.03%  countwords_par_  libicuuc.so.72.1                    [.] locale_get_default_72
+     0.03%  countwords_par_  libicuuc.so.72.1                    [.] uprv_max_72
+     0.03%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a92b
+     0.03%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fbd0
+     0.03%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fcc6
+     0.03%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136482
+     0.03%  countwords_par_  libstdc++.so.6.0.32                 [.] std::basic_filebuf<char, std::char_traits<char> >::basic_filebuf()
+     0.03%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::symlink_status(std::filesystem::__cxx11::path const&, std::error_code&)
+     0.03%  countwords_par_  libstdc++.so.6.0.32                 [.] std::locale::locale(std::locale const&)
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] __rcu_read_lock
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] aa_path_name
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] copyout
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] folio_mark_accessed
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] getname_flags.part.0
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] lookup_fast
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] memcg_slab_post_alloc_hook
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] mntput
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] our_mnt
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] prepend
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] rcu_cblist_dequeue
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] rseq_update_cpu_node_id
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] security_file_alloc
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] xas_start
+     0.02%  countwords_par_  countwords_par_tbb                  [.] bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     0.02%  countwords_par_  countwords_par_tbb                  [.] count_words(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     0.02%  countwords_par_  countwords_par_tbb                  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long)
+     0.02%  countwords_par_  countwords_par_tbb                  [.] std::filesystem::__cxx11::path::~path()
+     0.02%  countwords_par_  libboost_locale.so.1.74.0           [.] boost::locale::localization_backend_manager::create() const
+     0.02%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000062701
+     0.02%  countwords_par_  libboost_thread.so.1.74.0           [.] boost::detail::set_tss_data(void const*, void (*)(void (*)(void*), void*), void (*)(void*), void*, bool)
+     0.02%  countwords_par_  libc.so.6                           [.] __close_nocancel
+     0.02%  countwords_par_  libc.so.6                           [.] __memchr_avx2
+     0.02%  countwords_par_  libc.so.6                           [.] __offtime
+     0.02%  countwords_par_  libc.so.6                           [.] malloc_consolidate
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] __strcpy_chk@plt
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::CurrencyUnit::CurrencyUnit(icu_72::CurrencyUnit const&)
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DateFormat::createDateTimeInstance(icu_72::DateFormat::EStyle, icu_72::DateFormat::EStyle, icu_72::Locale const&)
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DateFormat::~DateFormat()
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DateFormatSymbols::DateFormatSymbols(icu_72::DateFormatSymbols const&)
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DateFormatSymbols::~DateFormatSymbols()
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::GregorianCalendar::GregorianCalendar(icu_72::GregorianCalendar const&)
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::GregorianCalendar::defaultCenturyStartYear() const
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Locale::operator==(icu_72::Locale const&) const@plt
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleDateFormat::initializeBooleanAttributes()
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleDateFormat::initializeCalendar(icu_72::TimeZone*, icu_72::Locale const&, UErrorCode&)
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::StringPiece::compare(icu_72::StringPiece)@plt
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::Scale::Scale(icu_72::number::Scale const&)
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] u_asciiToUpper_72@plt
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] uprv_isInvariantUString_72@plt
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] uprv_min_72@plt
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::LocaleBased::getLocaleID(ULocDataLocaleType, UErrorCode&) const
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::SimpleFormatter::format(icu_72::UnicodeString const&, icu_72::UnicodeString const&, icu_72::UnicodeString&, UErrorCode&) const
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::UnicodeString(signed char, icu_72::ConstChar16Ptr, int)
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::addRef()
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::doAppend(icu_72::UnicodeString const&, int, int)
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::setTo(signed char, icu_72::ConstChar16Ptr, int)
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] pthread_mutex_lock@plt
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] strcpy@plt
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] uprv_getRawUTCtime_72
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000105479
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010555c
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000105561
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a918
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a973
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010ce62
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc90
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fcf7
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131729
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131795
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136545
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001366a9
+     0.02%  countwords_par_  libstdc++.so.6.0.32                 [.] __cxxabiv1::__si_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+     0.02%  countwords_par_  libstdc++.so.6.0.32                 [.] operator delete(void*)
+     0.02%  countwords_par_  libstdc++.so.6.0.32                 [.] operator delete(void*)@plt
+     0.02%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::__cxx11::path::_List::_Impl_deleter::operator()(std::filesystem::__cxx11::path::_List::_Impl*) const
+     0.02%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::__cxx11::path::_M_append(std::basic_string_view<char, std::char_traits<char> >)
+     0.02%  countwords_par_  libtbb.so.12.9                      [.] tbb::detail::r1::allocate_memory(unsigned long)
+     0.02%  countwords_par_  libtbb.so.12.9                      [.] 0x0000000000027c97
+     0.02%  countwords_par_  libtbbmalloc.so.2.9                 [.] 0x0000000000011740
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] ___slab_alloc
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] __aa_path_perm
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] __call_rcu_common.constprop.0
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] __get_obj_cgroup_from_memcg
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] __get_user_8
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] __legitimize_mnt
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] __lookup_mnt
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] __x64_sys_newfstatat
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] _copy_to_iter
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] _raw_spin_unlock_irq
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] aa_get_buffer
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] aa_path_perm
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] aa_put_buffer
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] apparmor_file_free_security
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] clear_page_orig
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] copy_page_to_iter
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] cp_new_stat
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] d_namespace_path.constprop.0
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] ext4_file_getattr
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] is_vmalloc_addr
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] kfree
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] ksys_lseek
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] putname
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] security_file_permission
+     0.02%  countwords_par_  [kernel.kallsyms]                   [k] set_root
+     0.02%  countwords_par_  countwords_par_tbb                  [.] find_files(tbb::detail::d1::flow_control&, std::filesystem::__cxx11::recursive_directory_iterator&, std::filesystem::__cxx11::recursive_directory_iterator&, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&, unsigned long&)
+     0.02%  countwords_par_  countwords_par_tbb                  [.] tbb::detail::d1::concrete_filter<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, tbb::detail::d1::concurrent_unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, tbb::detail::d1::tbb_allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> > >, main::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)#1}>::operator()(void*)
+     0.02%  countwords_par_  libarchive.so.13.6.2                [.] archive_entry_clear
+     0.02%  countwords_par_  libarchive.so.13.6.2                [.] archive_entry_copy_mac_metadata
+     0.02%  countwords_par_  libarchive.so.13.6.2                [.] archive_entry_pathname_w
+     0.02%  countwords_par_  libarchive.so.13.6.2                [.] archive_read_support_format_zip
+     0.02%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000029060
+     0.02%  countwords_par_  libboost_locale.so.1.74.0           [.] boost::locale::generator::generate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+     0.02%  countwords_par_  libboost_locale.so.1.74.0           [.] boost::locale::generator::generate(std::locale const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const
+     0.02%  countwords_par_  libboost_locale.so.1.74.0           [.] boost::locale::util::create_info(std::locale const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     0.02%  countwords_par_  libboost_locale.so.1.74.0           [.] icu_72::Locale::~Locale()@plt
+     0.02%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000034680
+     0.02%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000036f29
+     0.02%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x00000000000394ce
+     0.02%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005bd4b
+     0.02%  countwords_par_  libc.so.6                           [.] __GI___getdents64
+     0.02%  countwords_par_  libc.so.6                           [.] __GI___pthread_self
+     0.02%  countwords_par_  libc.so.6                           [.] __GI___readdir64
+     0.02%  countwords_par_  libc.so.6                           [.] __close
+     0.02%  countwords_par_  libc.so.6                           [.] __fcntl64_nocancel_adjusted
+     0.02%  countwords_par_  libc.so.6                           [.] __libc_fcntl64
+     0.02%  countwords_par_  libc.so.6                           [.] __memcmp_avx2_movbe
+     0.02%  countwords_par_  libc.so.6                           [.] clock_gettime@@GLIBC_2.17
+     0.02%  countwords_par_  libc.so.6                           [.] mktime
+     0.02%  countwords_par_  libc.so.6                           [.] pthread_getspecific@@GLIBC_2.34
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::BasicTimeZone::BasicTimeZone(icu_72::BasicTimeZone const&)
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::BasicTimeZone::~BasicTimeZone()
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DecimalFormat::setGroupingUsed(signed char)
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Format::Format(icu_72::Format const&)
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Format::operator=(icu_72::Format const&)
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Locale::Locale()@plt
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::NumberFormat::setParseIntegerOnly(signed char)
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::StringPiece::StringPiece(char const*)@plt
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::UnicodeString::operator=(icu_72::UnicodeString&&)@plt
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::UnlocalizedNumberFormatter::locale(icu_72::Locale const&) &&
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::Grouper::forStrategy(UNumberGroupingStrategy)
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::SymbolsWrapper::SymbolsWrapper(icu_72::number::impl::SymbolsWrapper const&)
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] strcpy@plt
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] ures_getLocaleByType_72@plt
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] ures_getSize_72@plt
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] ustr_hashCharsN_72@plt
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001163b0
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000160680
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001613f5
+     0.02%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001d1055
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::BreakIterator::BreakIterator()
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Norm2AllModes::getNFCInstance(UErrorCode&)
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::RBBIDataWrapper::init(icu_72::RBBIDataHeader const*, UErrorCode&)
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::RuleBasedBreakIterator::~RuleBasedBreakIterator()
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnifiedCache::_inProgress(UHashElement const*) const
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnifiedCache::_runEvictionSlice() const
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] res_getPublicType_72
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] uhash_get_72
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] uhash_hashChars_72
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] uprv_getUTCtime_72
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] uprv_toupper_72
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010548a
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010548e
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000105559
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a8e2
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a91d
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a921
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a97f
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010ce97
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d00d
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d0cd
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d11b
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fbd5
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc9d
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fcae
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fcee
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013159b
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013159f
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131726
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013560c
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136486
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013666f
+     0.02%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013671a
+     0.02%  countwords_par_  libstdc++.so.6.0.32                 [.] __cxxabiv1::__class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+     0.02%  countwords_par_  libstdc++.so.6.0.32                 [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char)
+     0.02%  countwords_par_  libstdc++.so.6.0.32                 [.] std::chrono::_V2::system_clock::now()
+     0.02%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::__cxx11::recursive_directory_iterator::increment(std::error_code&)
+     0.02%  countwords_par_  libstdc++.so.6.0.32                 [.] std::locale::facet::_S_get_c_locale()
+     0.02%  countwords_par_  libtbb.so.12.9                      [.] tbb::detail::r1::deallocate(tbb::detail::d1::small_object_pool&, void*, unsigned long, tbb::detail::d1::execution_data const&)
+     0.02%  countwords_par_  libtbb.so.12.9                      [.] 0x000000000000fdb4
+     0.02%  countwords_par_  libtbb.so.12.9                      [.] 0x0000000000027c95
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __cond_resched
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __x64_sys_getdents64
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] _find_next_zero_bit
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] _raw_spin_trylock
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] check_heap_object
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] check_stack_object
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] common_perm_cond
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] do_dentry_open
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] do_filp_open
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] do_sys_openat2
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] do_user_addr_fault
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] expand_files
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] file_free_rcu
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] filemap_get_pages
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] filename_lookup
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] filldir64
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] from_kuid_munged
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] generic_fillattr
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] get_rock_ridge_filename
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] make_vfsuid
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] mod_objcg_state
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] nd_jump_root
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] path_name
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] pick_link
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] process_measurement
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] rseq_ip_fixup
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] security_file_open
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] slab_update_freelist.isra.0
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] vfs_read
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] walk_component
+     0.01%  countwords_par_  [vdso]                              [.] 0x0000000000000830
+     0.01%  countwords_par_  [vdso]                              [.] 0x0000000000000831
+     0.01%  countwords_par_  [vdso]                              [.] 0x0000000000000851
+     0.01%  countwords_par_  [vdso]                              [.] 0x0000000000000ae9
+     0.01%  countwords_par_  countwords_par_tbb                  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::substr(unsigned long, unsigned long) const
+     0.01%  countwords_par_  countwords_par_tbb                  [.] std::atomic<tbb::detail::d1::list_node<unsigned long>*>& tbb::detail::d1::segment_table<std::atomic<tbb::detail::d1::list_node<unsigned long>*>, tbb::detail::d1::tbb_allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> >, tbb::detail::d1::concurrent_unordered_base<tbb::detail::d1::concurrent_unordered_map_traits<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, tbb::detail::d1::tbb_allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> >, false> >::unordered_segment_table, 63ul>::internal_subscript<true>(unsigned long)
+     0.01%  countwords_par_  countwords_par_tbb                  [.] void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<std::istreambuf_iterator<char, std::char_traits<char> > >(std::istreambuf_iterator<char, std::char_traits<char> >, std::istreambuf_iterator<char, std::char_traits<char> >, std::input_iterator_tag) [clone .isra.0]
+     0.01%  countwords_par_  ld-linux-x86-64.so.2                [.] fstatat64
+     0.01%  countwords_par_  ld-linux-x86-64.so.2                [.] mmap64
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] archive_entry_set_atime
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] archive_read_data_skip
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] archive_read_open1
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000025730
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000059215
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x00000000000611e0
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x00000000000622e0
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000066105
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] __dynamic_cast@plt
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] boost::locale::generator::~generator()
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] boost::locale::localization_backend_manager::~localization_backend_manager()
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] boost::locale::util::create_utf8_codecvt(std::locale const&, unsigned int)
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] icu_72::Locale::Locale()@plt
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] std::locale::id::_M_id() const@plt
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000002e450
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000002e4b7
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000002e561
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000034b40
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000034c76
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000034f20
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000034f4c
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000037996
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000003e58a
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000004a9f0
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x00000000000597d2
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005a826
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005bd57
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005bd5a
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005bf40
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000061e90
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000061f3b
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000061f43
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000062718
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000065700
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000007a540
+     0.01%  countwords_par_  libc.so.6                           [.] _IO_file_fopen@@GLIBC_2.2.5
+     0.01%  countwords_par_  libc.so.6                           [.] __GI__IO_un_link.part.0
+     0.01%  countwords_par_  libc.so.6                           [.] __GI___lll_lock_wait
+     0.01%  countwords_par_  libc.so.6                           [.] __GI___lstat64
+     0.01%  countwords_par_  libc.so.6                           [.] __fstat64
+     0.01%  countwords_par_  libc.so.6                           [.] __gconv_transform_ascii_internal
+     0.01%  countwords_par_  libc.so.6                           [.] __tzfile_compute
+     0.01%  countwords_par_  libc.so.6                           [.] __tzstring_len
+     0.01%  countwords_par_  libc.so.6                           [.] __wcslen_avx2
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DateFormatSymbols::disposeZoneStrings()
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DateFormatSymbols::~DateFormatSymbols()
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::NumberFormat::createInstance(icu_72::Locale const&, UNumberFormatStyle, UErrorCode&)
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::NumberFormat::createSharedInstance(icu_72::Locale const&, UNumberFormatStyle, UErrorCode&)
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::NumberFormat::setMaximumIntegerDigits(int)
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::NumberFormat::setMinimumIntegerDigits(int)
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::NumberFormat::~NumberFormat()
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::OlsonTimeZone::~OlsonTimeZone()
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SharedObject::addRef() const@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleDateFormat::freeFastNumberFormatters()
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleDateFormat::~SimpleDateFormat()
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::TimeZone::operator=(icu_72::TimeZone const&)
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::TimeZone::~TimeZone()
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::UnicodeString::UnicodeString(icu_72::UnicodeString const&)@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::Scale::Scale(icu_72::number::Scale&&)
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::Scale::Scale(int, icu_72::number::impl::DecNum*)
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::Scale::none()
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::number::impl::SymbolsWrapper::SymbolsWrapper(icu_72::number::impl::SymbolsWrapper&&)
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] u_UCharsToChars_72@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] umtx_unlock_72@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] ures_getByIndex_72@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000112d35
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000112db0
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001163b4
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001163b8
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000151acb
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001606ab
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001d3622
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000228e90
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x000000000022bbc0
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x000000000022bbc4
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::BreakIterator::buildInstance(icu_72::Locale const&, char const*, UErrorCode&)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::SimpleFormatter::~SimpleFormatter()
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::copyFieldsFrom(icu_72::UnicodeString&, signed char)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::doReplace(int, int, char16_t const*, int, int)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::removeRef()
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::unBogus()
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnifiedCache::_computeCountOfItemsToEvict() const
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] strncpy@plt
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] u_strchr_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ucasemap_mapUTF8(int, unsigned int, icu_72::BreakIterator*, char*, int, char const*, int, void (*)(int, unsigned int, icu_72::BreakIterator*, unsigned char const*, int, icu_72::ByteSink&, icu_72::Edits*, UErrorCode&), icu_72::Edits*, UErrorCode&)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ucnv_close_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ucnv_createConverterFromSharedData_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ucnv_open_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ucnv_setToUCallBack_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] udata_open_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] uprv_unmapFile_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ures_close_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ures_getString_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] utext_openConstUnicodeString_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000102d50
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010544b
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001054a5
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000105510
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000105536
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a92e
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a932
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010cea7
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010cee4
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d036
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d04d
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d0ad
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d25d
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d4fe
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fbe1
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fbfd
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc60
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc67
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc95
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fcfd
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fcff
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131598
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013172d
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131732
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131746
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131774
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131780
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131785
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013178b
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001321a3
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000135275
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001352f4
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000135460
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000135726
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000135748
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013648d
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001364a0
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136537
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001365e9
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001365fd
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013662f
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136770
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001367a7
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000145cd8
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000014e4e0
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000157740
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] free@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] malloc@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] operator delete[](void*)
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::__basic_file<char>::is_open() const@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create(unsigned long&, unsigned long)
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long)
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::basic_filebuf<char, std::char_traits<char> >::underflow()
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::codecvt<char, char, __mbstate_t>::codecvt(unsigned long)
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::codecvt<char, char, __mbstate_t>::~codecvt()
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::__cxx11::path::_List::_List()
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::__cxx11::path::has_filename() const
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::status(std::filesystem::__cxx11::path const&, std::error_code&)
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::ios_base::ios_base()
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::locale::facet::_S_destroy_c_locale(__locale_struct*&)
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::locale::facet::~facet()
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::locale::id::_M_id() const@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::locale::~locale()@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] strlen@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] 0x00000000000cbf4e
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] 0x0000000000199158
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] 0x000000000019b7ee
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] tbb::detail::r1::allocate(tbb::detail::d1::small_object_pool*&, unsigned long, tbb::detail::d1::execution_data const&)
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x000000000002049a
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x0000000000021490
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x00000000000216d4
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x0000000000027ca3
+     0.01%  countwords_par_  libtbbmalloc.so.2.9                 [.] 0x0000000000011844
+     0.01%  countwords_par_  libtbbmalloc.so.2.9                 [.] 0x000000000001247e
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __alloc_pages
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __check_object_size
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __ext4_journal_get_write_access
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __f_unlock_pos
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __fput
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __get_task_ioprio
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __handle_mm_fault
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __mutex_init
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __pte_offset_map_lock
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __put_user_8
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __rcu_read_unlock
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __rmqueue_pcplist
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __run_timers
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __x64_sys_close
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __x64_sys_openat
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] __x86_indirect_thunk_rax
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] _compound_head
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] _copy_to_user
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] _find_first_bit
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] _raw_spin_lock
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] _raw_spin_lock_irq
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] _raw_spin_unlock
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] aa_file_perm
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] aa_label_next_confined
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] alloc_empty_file
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] alloc_fd
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] apparmor_file_open
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] apparmor_file_permission
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] build_open_flags
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] cgroup_rstat_updated
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] charge_memcg
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] close_fd
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] consume_obj_stock
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] consume_stock
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] cpu_util
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] current_time
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] d_absolute_path
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] dnotify_flush
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] do_open
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] down_read_killable
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] errseq_sample
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] file_ra_state_init
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] filp_close
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] flush_tlb_mm_range
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] folio_add_new_anon_rmap
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] free_pages
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] free_swap_cache
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] free_unref_page
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] free_unref_page_commit
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] fsnotify_perm.part.0
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] generic_file_llseek
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] generic_file_llseek_size
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] get_cached_acl_rcu
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] get_obj_cgroup_from_current
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] get_unused_fd_flags
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] getname
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] getname_flags
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] handle_mm_fault
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] hook_file_alloc_security
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] hook_file_open
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] ima_file_check
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] init_file
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] isofs_bmap
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] isofs_bread
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] isofs_get_blocks
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] iterate_dir
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] kick_process
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] kmem_cache_free_bulk.part.0
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] lock_vma_under_rcu
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] lockref_get
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] locks_remove_posix
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] lookup_bh_lru
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] mas_next_range
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] may_open
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] mntput_no_expire
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] mod_memcg_state
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] module_put
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] mtree_range_walk
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] mutex_unlock
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] next_uptodate_page
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] open_last_lookups
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] path_lookupat
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] percpu_counter_add_batch
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] perf_iterate_ctx
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] pmd_val
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] put_pid
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] put_unused_fd
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] queue_work_on
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] rcu_do_batch
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] rcu_nocb_unlock_irqrestore.part.0
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] rmqueue
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] rock_check_overflow
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] security_file_free
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] seq_put_hex_ll
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] should_failslab
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] up_read
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] up_write
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] vfs_getattr_nosec
+     0.01%  countwords_par_  [kernel.kallsyms]                   [k] zap_pte_range
+     0.01%  countwords_par_  [vdso]                              [.] __vdso_clock_gettime
+     0.01%  countwords_par_  [vdso]                              [.] 0x000000000000083c
+     0.01%  countwords_par_  [vdso]                              [.] 0x000000000000089b
+     0.01%  countwords_par_  [vdso]                              [.] 0x00000000000008bc
+     0.01%  countwords_par_  [vdso]                              [.] 0x00000000000008e6
+     0.01%  countwords_par_  [vdso]                              [.] 0x0000000000000ab1
+     0.01%  countwords_par_  [vdso]                              [.] 0x0000000000000b75
+     0.01%  countwords_par_  countwords_par_tbb                  [.] memcpy@plt
+     0.01%  countwords_par_  countwords_par_tbb                  [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, unsigned long, std::allocator<char> const&)
+     0.01%  countwords_par_  countwords_par_tbb                  [.] std::filesystem::__cxx11::path::_M_split_cmpts()@plt
+     0.01%  countwords_par_  countwords_par_tbb                  [.] std::locale::id::_M_id() const@plt
+     0.01%  countwords_par_  countwords_par_tbb                  [.] tbb::detail::d1::concrete_filter<tbb::detail::d1::concurrent_unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, tbb::detail::d1::tbb_allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> > >, void, main::{lambda(tbb::detail::d1::concurrent_unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, tbb::detail::d1::tbb_allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> > >)#1}>::operator()(void*)
+     0.01%  countwords_par_  countwords_par_tbb                  [.] tbb::detail::d1::concrete_filter<void, std::pair<std::filesystem::__cxx11::directory_entry, bool>, main::{lambda(tbb::detail::d1::flow_control&)#1}>::operator()(void*)
+     0.01%  countwords_par_  countwords_par_tbb                  [.] void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) [clone .isra.0]
+     0.01%  countwords_par_  ld-linux-x86-64.so.2                [.] _dl_lookup_symbol_x
+     0.01%  countwords_par_  ld-linux-x86-64.so.2                [.] get_common_cache_info.constprop.0
+     0.01%  countwords_par_  ld-linux-x86-64.so.2                [.] handle_intel.constprop.0
+     0.01%  countwords_par_  ld-linux-x86-64.so.2                [.] mprotect
+     0.01%  countwords_par_  ld-linux-x86-64.so.2                [.] update_active.constprop.0
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] archive_entry_new2
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] archive_entry_pathname
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] archive_entry_set_uid
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] archive_read_new
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] archive_read_next_header
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] archive_read_set_open_callback
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] crc32@plt
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] fcntl@plt
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x000000000001d646
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000020d14
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000020ea9
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000024098
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000024700
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x000000000002474d
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x00000000000247bd
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x00000000000253cc
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x00000000000255b0
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x00000000000255ea
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000025612
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x000000000002587c
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000025e00
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000025e3f
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000025edf
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000027040
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x00000000000270e8
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x00000000000271b4
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x00000000000271ca
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000028ec0
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x000000000002908e
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000029353
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x000000000002941e
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x00000000000609cc
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000060ad9
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000060add
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000060c19
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000060cf5
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000062d00
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000062d3c
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000062dd0
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000062dd6
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000066018
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000066144
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x000000000006614d
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x00000000000661a7
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x00000000000664c8
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x00000000000664ef
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000066520
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x00000000000666f8
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000066b70
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000066c40
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x0000000000069120
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x000000000006915c
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x000000000006aeb0
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x000000000006aeea
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x000000000006af43
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x000000000006b23e
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x000000000006b250
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x000000000006b6b3
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x000000000006b7c0
+     0.01%  countwords_par_  libarchive.so.13.6.2                [.] 0x000000000009c0e5
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] boost::detail::set_tss_data(void const*, void (*)(void (*)(void*), void*), void (*)(void*), void*, bool)@plt
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] icu_72::DateFormat::createDateInstance(icu_72::DateFormat::EStyle, icu_72::Locale const&)@plt
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] icu_72::UnicodeString::UnicodeString(char const*, int, UConverter*, UErrorCode&)@plt
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] memcpy@plt
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] operator delete(void*, unsigned long)@plt
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] pthread_mutex_unlock@plt
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_assign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@plt
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long)@plt
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] std::locale::classic()@plt
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] std::locale::locale(std::locale const&)@plt
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] ucnv_open_72@plt
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000002e566
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000002e590
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000002e5b5
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000002ee26
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000002ef15
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000002ef60
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000002f006
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000002f04d
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000002f080
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000002faa6
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000032b00
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000032b0f
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000034688
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000034c20
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000034ef0
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000034f23
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000034f2e
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000034f3f
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000034f62
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000034f65
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000034f68
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000034f7b
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000035850
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000003586b
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000035f99
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000037990
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x00000000000379b0
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000038ac0
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x00000000000394e5
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000039624
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000003b97b
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000003c729
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000004aa07
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000004d640
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000004d680
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000004e5a0
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000004ea07
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000053510
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000055cb0
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000055cc7
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000055cf3
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000055d94
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x00000000000565e9
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000056601
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000056a82
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x00000000000597a0
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000059910
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000059914
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x00000000000599d0
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x00000000000599d2
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000059a1b
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005a266
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005a447
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005a6fc
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005a824
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005a83d
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005b210
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005b240
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005b2b0
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005bc63
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005bd48
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005bd6d
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005bdc5
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005be70
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005c270
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000005c2a3
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000061eac
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000061eef
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000061f52
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000061fc6
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000062153
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000006237b
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x00000000000623b0
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000062576
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000062643
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000062668
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x00000000000627b5
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000062d70
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000062d7c
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000062d82
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000006570b
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000065ed0
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000065ed4
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000006e8f0
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000006e97b
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000007094e
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000070995
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000075340
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000007537c
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x0000000000075436
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000007a179
+     0.01%  countwords_par_  libboost_locale.so.1.74.0           [.] 0x000000000007a593
+     0.01%  countwords_par_  libboost_program_options.so.1.74.0  [.] boost::program_options::option_description::long_name[abi:cxx11]() const
+     0.01%  countwords_par_  libboost_thread.so.1.74.0           [.] pthread_getspecific@plt
+     0.01%  countwords_par_  libc.so.6                           [.] _IO_link_in
+     0.01%  countwords_par_  libc.so.6                           [.] _IO_no_init
+     0.01%  countwords_par_  libc.so.6                           [.] __GI___libc_cleanup_push_defer
+     0.01%  countwords_par_  libc.so.6                           [.] __GI___pthread_enable_asynccancel
+     0.01%  countwords_par_  libc.so.6                           [.] __GI___stat64
+     0.01%  countwords_par_  libc.so.6                           [.] __errno_location
+     0.01%  countwords_par_  libc.so.6                           [.] __fdopendir
+     0.01%  countwords_par_  libc.so.6                           [.] __libc_openat64
+     0.01%  countwords_par_  libc.so.6                           [.] __lll_lock_wake_private
+     0.01%  countwords_par_  libc.so.6                           [.] __memmove_chk_avx_unaligned_erms
+     0.01%  countwords_par_  libc.so.6                           [.] __strrchr_avx2
+     0.01%  countwords_par_  libc.so.6                           [.] __tz_convert
+     0.01%  countwords_par_  libc.so.6                           [.] __tzstring
+     0.01%  countwords_par_  libc.so.6                           [.] dirfd
+     0.01%  countwords_par_  libc.so.6                           [.] fopen@@GLIBC_2.2.5
+     0.01%  countwords_par_  libc.so.6                           [.] pthread_mutex_init@@GLIBC_2.2.5
+     0.01%  countwords_par_  libc.so.6                           [.] pthread_once@GLIBC_2.2.5
+     0.01%  countwords_par_  libc.so.6                           [.] strlen
+     0.01%  countwords_par_  libc.so.6                           [.] systrim.constprop.0
+     0.01%  countwords_par_  libc.so.6                           [.] 0x000000000017d6dd
+     0.01%  countwords_par_  libgcc_s.so.1                       [.] __cpu_indicator_init
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Calendar::getNow()
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DateFormat::createDateInstance(icu_72::DateFormat::EStyle, icu_72::Locale const&)
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DateFormat::createTimeInstance(icu_72::DateFormat::EStyle, icu_72::Locale const&)
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::DecimalFormat::touchNoError()
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Format::Format()
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Format::setLocaleIDs(char const*, char const*)
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Format::~Format()
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::GregorianCalendar::~GregorianCalendar()
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Locale::Locale(icu_72::Locale const&)@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Locale::getKeywordValue(char const*, char*, int, UErrorCode&) const@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::Locale::operator=(icu_72::Locale&&)@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::LocaleBased::getLocale(ULocDataLocaleType, UErrorCode&) const@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::NumberFormat::NumberFormat(icu_72::NumberFormat const&)
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::NumberFormat::setGroupingUsed(signed char)
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::NumberFormat::setMaximumFractionDigits(int)
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SharedObject::removeRef() const@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleDateFormat::toPattern(icu_72::UnicodeString&) const
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleFormatter::applyPatternMinMaxArguments(icu_72::UnicodeString const&, int, int, UErrorCode&)@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::SimpleTimeZone::deleteTransitionRules()
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::UnicodeString::UnicodeString(signed char, icu_72::ConstChar16Ptr, int)@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::UnicodeString::setToBogus()@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] icu_72::UnifiedCache::getInstance(UErrorCode&)@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] uprv_getUTCtime_72@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] uprv_max_72@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] ures_getByKeyWithFallback_72@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] ures_getString_72@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] ures_getType_72@plt
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000112d90
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000112db3
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000112db7
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000112dbb
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001163c4
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000151acf
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x000000000015228d
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001522b8
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000152344
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000152368
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000152427
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001606a0
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001d1115
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001d1130
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001d1137
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001d113b
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001d1159
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001d1166
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001d364e
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000001d36e7
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000228eaa
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000228ed4
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000228ef4
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000228f08
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x000000000022bbc2
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x000000000022bbd3
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x000000000022bbe6
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x000000000022bbee
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x000000000022bbfe
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x000000000022bc01
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x000000000022bc10
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x000000000022bc18
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x000000000022bc86
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000002906e0
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000002906e6
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x00000000002907f7
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x0000000000290824
+     0.01%  countwords_par_  libicui18n.so.72.1                  [.] 0x000000000029083f
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] UCNV_FROM_U_CALLBACK_SKIP_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] UCNV_TO_U_CALLBACK_SKIP_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] gettimeofday@plt
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::BreakIterator::makeInstance(icu_72::Locale const&, int, UErrorCode&)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::createCanonical(char const*)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Locale::getBaseName() const
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Normalizer2::getNFDInstance(UErrorCode&)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Normalizer2Factory::getInstance(UNormalizationMode, UErrorCode&)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::Normalizer::normalize(icu_72::UnicodeString const&, UNormalizationMode, int, icu_72::UnicodeString&, UErrorCode&)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::RBBIDataWrapper::init0()
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::RBBIDataWrapper::removeReference()
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::RBBIDataWrapper::~RBBIDataWrapper()
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::ReorderingBuffer::init(int, UErrorCode&)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::RuleBasedBreakIterator::BreakCache::current()
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::RuleBasedBreakIterator::DictionaryCache::DictionaryCache(icu_72::RuleBasedBreakIterator*, UErrorCode&)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::RuleBasedBreakIterator::DictionaryCache::following(int, int*, int*)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::RuleBasedBreakIterator::DictionaryCache::reset()
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::RuleBasedBreakIterator::RuleBasedBreakIterator(UDataMemory*, UErrorCode&)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::RuleBasedBreakIterator::first()
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::RuleBasedBreakIterator::handleNext()
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::RuleBasedBreakIterator::next()
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::RuleBasedBreakIterator::setText(icu_72::UnicodeString const&)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::RuleBasedBreakIterator::~RuleBasedBreakIterator()
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::StringCharacterIterator::StringCharacterIterator(icu_72::UnicodeString const&)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::StringCharacterIterator::setText(icu_72::UnicodeString const&)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::StringCharacterIterator::~StringCharacterIterator()
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UVector32::UVector32(UErrorCode&)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UVector32::_init(int, UErrorCode&)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UVector32::~UVector32()
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::UnicodeString(char const*, int, UConverter*, UErrorCode&)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::fromUTF8(icu_72::StringPiece)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnicodeString::getBuffer(int)
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnifiedCache::_inProgress(icu_72::SharedObject const*, UErrorCode) const
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] icu_72::UnifiedCache::handleUnreferencedObject() const
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] memset@plt
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] u_getDataDirectory_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] u_memcpy_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ucasemap_close_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ucasemap_setLocale_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ucasemap_utf8FoldCase_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ucnv_createConverter_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ucnv_getMaxCharSize_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ucnv_resetFromUnicode_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ucnv_setFromUCallBack_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ucptrie_getValueWidth_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ucptrie_openFromBinary_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] uloc_canonicalize_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ulocimp_getName_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] ures_initStackObject_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] utext_openUChars_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] utext_setup_72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000000a1050
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000000cd180
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000000cd187
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000000ce420
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000000d11aa
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000000d1340
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000102e0c
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000102e13
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010541b
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000105424
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000105429
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010542b
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000105437
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010543b
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000105481
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000105511
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010551c
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000105523
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000105545
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010554a
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010554e
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010557b
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010557e
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a8e4
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a8eb
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a8f1
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a8fc
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a927
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a93a
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a968
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a96d
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a97b
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010a981
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010ce60
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010ce66
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010ce6a
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010cebd
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010ced9
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010cf0b
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010cf36
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010cf3e
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010cf46
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010cf68
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010cf7c
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010cf7f
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010cfc8
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d013
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d029
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d045
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d0e8
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d129
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d3a0
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d3a8
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d4b6
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d4f0
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d50a
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000010d692
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fbf3
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fbf7
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fbff
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc1a
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc28
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc4b
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc50
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc55
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc62
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc6b
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc72
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc85
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fc9a
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fcb3
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fcbd
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fcc2
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fcc9
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fcdf
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fce8
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000012fcf6
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013156d
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131570
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131579
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131582
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131589
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001315a3
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001315b4
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001315eb
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131722
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131724
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013172e
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013173e
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131770
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131773
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000131777
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013177b
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000132127
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013216b
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000132183
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000132197
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013219c
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001321a7
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001321c5
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001321c9
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000134722
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000134784
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001347c3
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001347d2
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001348c5
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001350a4
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001350a6
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001350a8
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001350cd
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001350df
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000135105
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000135118
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000135148
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013517d
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000135184
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013520b
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013531a
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000135380
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001353a7
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001353c4
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000135446
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000135487
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000135492
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001354d0
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001355ac
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001355c2
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001356af
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001356b3
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001356c3
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001356df
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000135734
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013576c
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000135785
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136480
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136488
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136489
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013648c
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136494
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001364a7
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001364af
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001364b8
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001364d6
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001364e4
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001364ef
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136554
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001365c8
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001365d8
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013663c
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136644
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013665d
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136662
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136666
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013667f
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136689
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013669a
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001366c3
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001366c6
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001366ca
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001366dc
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013677a
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000136787
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013678a
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001367a3
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x00000000001387d0
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x000000000013886d
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000145cd0
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000146cd0
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000157749
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000157820
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000157826
+     0.01%  countwords_par_  libicuuc.so.72.1                    [.] 0x0000000000157836
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] fopen64@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] memcpy@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] operator new(unsigned long)@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] operator new[](unsigned long)
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::_V2::generic_category()@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::_V2::system_category()@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::__basic_file<char>::__basic_file(pthread_mutex_t*)
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::__basic_file<char>::~__basic_file()
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long)
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::find_first_of(char const*, unsigned long, unsigned long) const
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::resize(unsigned long, char)
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate)
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::__cxx11::path::_List::_Impl_deleter::operator()(std::filesystem::__cxx11::path::_List::_Impl*) const@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::__cxx11::path::_List::_List(std::filesystem::__cxx11::path::_List const&)@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::__cxx11::path::_M_split_cmpts()@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::__cxx11::recursive_directory_iterator::operator++()
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::file_size(std::filesystem::__cxx11::path const&)
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::file_size(std::filesystem::__cxx11::path const&, std::error_code&)
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::filesystem::file_size(std::filesystem::__cxx11::path const&, std::error_code&)@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::ios_base::_M_call_callbacks(std::ios_base::event)
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::ios_base::~ios_base()
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::locale::classic()
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] std::locale::facet::_S_get_c_locale()@plt
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] 0x00000000000cbf40
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] 0x00000000000da833
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] 0x00000000000e90f0
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] 0x00000000000e9160
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] 0x00000000000e919d
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] 0x00000000000eca2f
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] 0x000000000018b025
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] 0x000000000018cc00
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] 0x0000000000197722
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] 0x0000000000199150
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] 0x000000000019b771
+     0.01%  countwords_par_  libstdc++.so.6.0.32                 [.] 0x000000000019b7ff
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] pthread_getspecific@plt
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] tbb::detail::r1::is_group_execution_cancelled(tbb::detail::d1::task_group_context&)
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x000000000000d3cd
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x0000000000010d2a
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x00000000000145ff
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x0000000000014bec
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x0000000000014de5
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x0000000000014df3
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x000000000002049d
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x000000000002138d
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x000000000002146d
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x00000000000217c9
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x0000000000025be8
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x0000000000026543
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x0000000000027c62
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x0000000000027c90
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x0000000000027cac
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x00000000000294e0
+     0.01%  countwords_par_  libtbb.so.12.9                      [.] 0x00000000000295a0
+     0.01%  countwords_par_  libtbbmalloc.so.2.9                 [.] scalable_free
+     0.01%  countwords_par_  libtbbmalloc.so.2.9                 [.] scalable_malloc
+     0.01%  countwords_par_  libtbbmalloc.so.2.9                 [.] 0x000000000000669e
+     0.01%  countwords_par_  libtbbmalloc.so.2.9                 [.] 0x00000000000066b3
+     0.01%  countwords_par_  libtbbmalloc.so.2.9                 [.] 0x00000000000066bb
+     0.01%  countwords_par_  libtbbmalloc.so.2.9                 [.] 0x0000000000010620
+     0.01%  countwords_par_  libtbbmalloc.so.2.9                 [.] 0x0000000000010640
+     0.01%  countwords_par_  libtbbmalloc.so.2.9                 [.] 0x000000000001174b
+     0.01%  countwords_par_  libtbbmalloc.so.2.9                 [.] 0x0000000000011839
+     0.01%  countwords_par_  libtbbmalloc.so.2.9                 [.] 0x000000000001248a
+     0.01%  countwords_par_  libz.so.1.2.13                      [.] crc32
+     0.01%  countwords_par_  libz.so.1.2.13                      [.] crc32_z
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

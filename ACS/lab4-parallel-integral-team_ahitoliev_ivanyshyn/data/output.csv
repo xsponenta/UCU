@@ -1,0 +1,4 @@
+Function,Integral Value,Absolute Error,Relative Error,Minimal Time,Average Time,Corrected Sample Standard Deviation,Threads
+1,4545450.0,0.0234052,5.14914e-09,27.0,30.09,1.1379140937911283,4
+2,857208.0,0.05416,6.31819e-08,94.0,106.45,8.125747828832603,4
+3,-1.60467,4.1544e-05,2.58895e-05,13.0,14.83,1.6700269156483374,4

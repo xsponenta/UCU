@@ -1,0 +1,563 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 20K of event 'cpu-clock:ppp'
+# Event count (approx.): 5202250000
+#
+# Overhead  Command         Shared Object              Symbol                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+# ........  ..............  .........................  .........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+#
+    13.12%  countwords_par  libicuuc.so.72.1           [.] icu_72::RuleBasedBreakIterator::handleNext()
+     6.71%  countwords_par  countwords_par             [.] count_words(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     6.70%  countwords_par  libicuuc.so.72.1           [.] ucnv_getNextUChar_72
+     5.83%  countwords_par  libicuuc.so.72.1           [.] ucnv_createConverterFromSharedData_72
+     3.65%  countwords_par  libstdc++.so.6.0.32        [.] std::_Hash_bytes(void const*, unsigned long, unsigned long)
+     3.24%  countwords_par  [kernel.kallsyms]          [k] __do_softirq
+     3.10%  countwords_par  countwords_par             [.] std::__detail::_Map_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+     2.86%  countwords_par  libc.so.6                  [.] __memmove_avx_unaligned_erms
+     2.59%  countwords_par  libc.so.6                  [.] malloc
+     2.40%  countwords_par  libicuuc.so.72.1           [.] ucnv_close_72
+     2.20%  countwords_par  libc.so.6                  [.] _int_free
+     2.19%  countwords_par  [kernel.kallsyms]          [k] do_user_addr_fault
+     2.05%  countwords_par  [kernel.kallsyms]          [k] _raw_spin_unlock_irqrestore
+     1.82%  countwords_par  libicuuc.so.72.1           [.] u_countChar32_72
+     1.79%  countwords_par  [kernel.kallsyms]          [k] clear_page_orig
+     1.75%  countwords_par  libicuuc.so.72.1           [.] ucnv_loadSharedData_72
+     1.53%  countwords_par  countwords_par             [.] binary_filler(ThreadQueue<std::filesystem::__cxx11::directory_entry>&, ThreadQueue<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >&, std::chrono::duration<long, std::ratio<1l, 1000000000l> >&)
+     1.36%  countwords_par  libc.so.6                  [.] __memcmp_avx2_movbe
+     1.26%  countwords_par  libicuuc.so.72.1           [.] ucnv_createConverter_72
+     1.24%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d77a
+     0.99%  countwords_par  libc.so.6                  [.] cfree@GLIBC_2.2.5
+     0.96%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fb4e
+     0.93%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000ec87b
+     0.87%  countwords_par  libicuuc.so.72.1           [.] icu_72::RuleBasedBreakIterator::BreakCache::populateFollowing()
+     0.84%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000007a236
+     0.81%  countwords_par  libicuuc.so.72.1           [.] icu_72::RuleBasedBreakIterator::next()
+     0.74%  countwords_par  [kernel.kallsyms]          [k] finish_task_switch.isra.0
+     0.71%  countwords_par  [kernel.kallsyms]          [k] exit_to_user_mode_loop
+     0.69%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fc0f
+     0.69%  countwords_par  libicuuc.so.72.1           [.] icu_72::RuleBasedBreakIterator::getRuleStatusVec(int*, int, UErrorCode&)
+     0.68%  countwords_par  libicuuc.so.72.1           [.] icu_72::RuleBasedBreakIterator::BreakCache::addFollowing(int, int, icu_72::RuleBasedBreakIterator::BreakCache::UpdatePositionValues)
+     0.67%  countwords_par  libicuuc.so.72.1           [.] ucnv_fromUnicode_UTF8_72
+     0.62%  countwords_par  libicuuc.so.72.1           [.] icu_72::UnicodeString::countChar32(int, int) const
+     0.62%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd292
+     0.59%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000ec877
+     0.56%  countwords_par  libicuuc.so.72.1           [.] icu_72::Normalizer2Impl::decompose(char16_t const*, char16_t const*, icu_72::ReorderingBuffer*, UErrorCode&) const
+     0.53%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fb63
+     0.44%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d77e
+     0.43%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000ec892
+     0.38%  countwords_par  libicuuc.so.72.1           [.] ucnv_setToUCallBack_72
+     0.34%  countwords_par  libc.so.6                  [.] __memset_avx2_unaligned_erms
+     0.29%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fb89
+     0.29%  countwords_par  libicuuc.so.72.1           [.] ucnv_setFromUCallBack_72
+     0.29%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd260
+     0.29%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000ed606
+     0.26%  countwords_par  libicuuc.so.72.1           [.] ucnv_open_72
+     0.25%  countwords_par  [kernel.kallsyms]          [k] _compound_head
+     0.25%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fbb6
+     0.25%  countwords_par  libicuuc.so.72.1           [.] uprv_malloc_72
+     0.24%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fb57
+     0.24%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd29c
+     0.22%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd271
+     0.22%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d782
+     0.22%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd2af
+     0.21%  countwords_par  libicuuc.so.72.1           [.] UCNV_FROM_U_CALLBACK_SKIP_72
+     0.20%  countwords_par  libicuuc.so.72.1           [.] icu_72::RuleBasedBreakIterator::BreakCache::nextOL()
+     0.19%  countwords_par  libc.so.6                  [.] _int_malloc
+     0.19%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000ed718
+     0.19%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee26
+     0.19%  countwords_par  libicuuc.so.72.1           [.] uprv_free_72
+     0.18%  countwords_par  countwords_par             [.] void std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_assign<std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> > const&, std::__detail::_ReuseOrAllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, true> > > >(std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> > const&, std::__detail::_ReuseOrAllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, true> > > const&)
+     0.18%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000007a23c
+     0.18%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000ed5f7
+     0.17%  countwords_par  libboost_locale.so.1.74.0  [.] ucnv_getNextUChar_72@plt
+     0.16%  countwords_par  [kernel.kallsyms]          [k] get_mem_cgroup_from_mm
+     0.16%  countwords_par  libc.so.6                  [.] __GI___libc_write
+     0.16%  countwords_par  countwords_par             [.] void std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_assign<std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> > const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, true> > > >(std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> > const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, true> > > const&) [clone .isra.0]
+     0.16%  countwords_par  libicuuc.so.72.1           [.] ucptrie_getValueWidth_72
+     0.16%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd285
+     0.15%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fbc7
+     0.15%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fc03
+     0.15%  countwords_par  libicuuc.so.72.1           [.] UCNV_TO_U_CALLBACK_SKIP_72
+     0.15%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fc00
+     0.14%  countwords_par  [kernel.kallsyms]          [k] mtree_range_walk
+     0.14%  countwords_par  libc.so.6                  [.] malloc_consolidate
+     0.14%  countwords_par  libicuuc.so.72.1           [.] icu_72::CheckedArrayByteSink::Append(char const*, int)
+     0.13%  countwords_par  [kernel.kallsyms]          [k] __handle_mm_fault
+     0.13%  countwords_par  [kernel.kallsyms]          [k] __alloc_pages
+     0.13%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002eef7
+     0.13%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d757
+     0.12%  countwords_par  [kernel.kallsyms]          [k] charge_memcg
+     0.12%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee62
+     0.12%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fb5e
+     0.12%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fb81
+     0.11%  countwords_par  [kernel.kallsyms]          [k] __rcu_read_lock
+     0.11%  countwords_par  libboost_locale.so.1.74.0  [.] ucnv_close_72@plt
+     0.11%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d8b5
+     0.11%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fb7c
+     0.11%  countwords_par  libicuuc.so.72.1           [.] malloc@plt
+     0.11%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee20
+     0.11%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee72
+     0.10%  countwords_par  countwords_par             [.] memcpy@plt
+     0.10%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ef06
+     0.10%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d765
+     0.10%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d797
+     0.10%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d7c1
+     0.10%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d7dd
+     0.10%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fba0
+     0.10%  countwords_par  [kernel.kallsyms]          [k] __mod_memcg_lruvec_state
+     0.10%  countwords_par  [kernel.kallsyms]          [k] vma_alloc_folio
+     0.10%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee48
+     0.10%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d827
+     0.10%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d898
+     0.10%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fbf0
+     0.10%  countwords_par  libicuuc.so.72.1           [.] free@plt
+     0.10%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd5c0
+     0.10%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000ed612
+     0.09%  countwords_par  countwords_par             [.] std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&)
+     0.09%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fbb1
+     0.09%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fc60
+     0.09%  countwords_par  [kernel.kallsyms]          [k] __schedule
+     0.09%  countwords_par  [kernel.kallsyms]          [k] _raw_spin_lock
+     0.09%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002eece
+     0.09%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fb49
+     0.09%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fb6a
+     0.08%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee57
+     0.08%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ef24
+     0.08%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d7ad
+     0.08%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d7d3
+     0.08%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fc65
+     0.08%  countwords_par  [kernel.kallsyms]          [k] down_read_trylock
+     0.08%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ef15
+     0.08%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fba3
+     0.07%  countwords_par  [kernel.kallsyms]          [k] get_page_from_freelist
+     0.07%  countwords_par  countwords_par             [.] std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, true>*, unsigned long)
+     0.07%  countwords_par  libstdc++.so.6.0.32        [.] operator new(unsigned long)
+     0.07%  countwords_par  [kernel.kallsyms]          [k] __mod_node_page_state
+     0.07%  countwords_par  [kernel.kallsyms]          [k] crc32c_pcl_intel_update
+     0.07%  countwords_par  [kernel.kallsyms]          [k] lock_vma_under_rcu
+     0.07%  countwords_par  libboost_locale.so.1.74.0  [.] ucnv_setToUCallBack_72@plt
+     0.07%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee5f
+     0.07%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ef33
+     0.07%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d8e2
+     0.06%  countwords_par  [kernel.kallsyms]          [k] blk_cgroup_congested
+     0.06%  countwords_par  [kernel.kallsyms]          [k] syscall_enter_from_user_mode
+     0.06%  countwords_par  countwords_par             [.] memcmp@plt
+     0.06%  countwords_par  countwords_par             [.] std::_Hash_bytes(void const*, unsigned long, unsigned long)@plt
+     0.06%  countwords_par  countwords_par             [.] std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::~_Hashtable()
+     0.06%  countwords_par  libboost_locale.so.1.74.0  [.] ucnv_open_72@plt
+     0.06%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002eee3
+     0.06%  countwords_par  [kernel.kallsyms]          [k] __mod_lruvec_page_state
+     0.06%  countwords_par  [kernel.kallsyms]          [k] __rmqueue_pcplist
+     0.06%  countwords_par  [kernel.kallsyms]          [k] free_unref_page_commit
+     0.06%  countwords_par  [kernel.kallsyms]          [k] llist_reverse_order
+     0.06%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ef01
+     0.06%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d8a0
+     0.06%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fbba
+     0.05%  countwords_par  [kernel.kallsyms]          [k] __rcu_read_unlock
+     0.05%  countwords_par  [kernel.kallsyms]          [k] free_unref_page_prepare
+     0.05%  countwords_par  [kernel.kallsyms]          [k] handle_mm_fault
+     0.05%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee37
+     0.05%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fbd1
+     0.05%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fbd6
+     0.05%  countwords_par  [kernel.kallsyms]          [k] percpu_counter_add_batch
+     0.05%  countwords_par  [kernel.kallsyms]          [k] rmqueue
+     0.05%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fc6b
+     0.05%  countwords_par  libicuuc.so.72.1           [.] icu_72::ByteSinkUtil::appendNonEmptyUnchanged(unsigned char const*, int, icu_72::ByteSink&, unsigned int, icu_72::Edits*)
+     0.04%  countwords_par  [kernel.kallsyms]          [k] __pte_offset_map
+     0.04%  countwords_par  [kernel.kallsyms]          [k] rep_movs_alternative
+     0.04%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee2f
+     0.04%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d8c8
+     0.04%  countwords_par  [kernel.kallsyms]          [k] _raw_spin_unlock_irq
+     0.04%  countwords_par  [kernel.kallsyms]          [k] count_memcg_events.constprop.0
+     0.04%  countwords_par  [kernel.kallsyms]          [k] ext4_da_write_end
+     0.04%  countwords_par  [kernel.kallsyms]          [k] free_swap_cache
+     0.04%  countwords_par  [kernel.kallsyms]          [k] page_remove_rmap
+     0.04%  countwords_par  [kernel.kallsyms]          [k] update_blocked_averages
+     0.04%  countwords_par  libboost_locale.so.1.74.0  [.] ucnv_setFromUCallBack_72@plt
+     0.04%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee5a
+     0.04%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fb6f
+     0.04%  countwords_par  libc.so.6                  [.] unlink_chunk.isra.0
+     0.04%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd2a5
+     0.04%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd5c3
+     0.04%  countwords_par  libstdc++.so.6.0.32        [.] operator delete(void*)@plt
+     0.03%  countwords_par  [kernel.kallsyms]          [k] __kmem_cache_free
+     0.03%  countwords_par  [kernel.kallsyms]          [k] __pte_offset_map_lock
+     0.03%  countwords_par  [kernel.kallsyms]          [k] _raw_spin_trylock
+     0.03%  countwords_par  [kernel.kallsyms]          [k] blk_complete_reqs
+     0.03%  countwords_par  [kernel.kallsyms]          [k] do_anonymous_page
+     0.03%  countwords_par  [kernel.kallsyms]          [k] folio_add_lru
+     0.03%  countwords_par  [kernel.kallsyms]          [k] folio_add_new_anon_rmap
+     0.03%  countwords_par  [kernel.kallsyms]          [k] fsnotify
+     0.03%  countwords_par  [kernel.kallsyms]          [k] mas_walk
+     0.03%  countwords_par  [kernel.kallsyms]          [k] mod_objcg_state
+     0.03%  countwords_par  [kernel.kallsyms]          [k] up_read
+     0.03%  countwords_par  [kernel.kallsyms]          [k] zap_pte_range
+     0.03%  countwords_par  countwords_par             [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::swap(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+     0.03%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee2b
+     0.03%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee33
+     0.03%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee43
+     0.03%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fb77
+     0.03%  countwords_par  libc.so.6                  [.] read
+     0.03%  countwords_par  [kernel.kallsyms]          [k] __block_commit_write.isra.0
+     0.03%  countwords_par  [kernel.kallsyms]          [k] cgroup_rstat_updated
+     0.03%  countwords_par  [kernel.kallsyms]          [k] kmem_cache_free
+     0.03%  countwords_par  [kernel.kallsyms]          [k] memset_orig
+     0.03%  countwords_par  [kernel.kallsyms]          [k] read_tsc
+     0.03%  countwords_par  [kernel.kallsyms]          [k] send_to_group
+     0.03%  countwords_par  [kernel.kallsyms]          [k] try_charge_memcg
+     0.03%  countwords_par  countwords_par             [.] void std::__introsort_loop<__gnu_cxx::__normal_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>*, std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> > > >, long, __gnu_cxx::__ops::_Iter_comp_iter<main::{lambda(auto:1 const&, auto:2 const&)#1}> >(__gnu_cxx::__normal_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>*, std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> > > >, __gnu_cxx::__normal_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>*, std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> > > >, long, __gnu_cxx::__ops::_Iter_comp_iter<main::{lambda(auto:1 const&, auto:2 const&)#1}>)
+     0.03%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ef1c
+     0.03%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d810
+     0.03%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fb84
+     0.03%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fb8e
+     0.03%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fc70
+     0.03%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd275
+     0.03%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd708
+     0.03%  countwords_par  libstdc++.so.6.0.32        [.] operator delete(void*)
+     0.03%  countwords_par  libstdc++.so.6.0.32        [.] std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const
+     0.02%  countwords_par  [kernel.kallsyms]          [k] __slab_free
+     0.02%  countwords_par  [kernel.kallsyms]          [k] _find_first_bit
+     0.02%  countwords_par  [kernel.kallsyms]          [k] ext4_fill_raw_inode
+     0.02%  countwords_par  [kernel.kallsyms]          [k] ext4_journal_check_start
+     0.02%  countwords_par  [kernel.kallsyms]          [k] filemap_get_entry
+     0.02%  countwords_par  [kernel.kallsyms]          [k] folio_rotate_reclaimable
+     0.02%  countwords_par  [kernel.kallsyms]          [k] kmem_cache_alloc
+     0.02%  countwords_par  [kernel.kallsyms]          [k] memcg_slab_post_alloc_hook
+     0.02%  countwords_par  [kernel.kallsyms]          [k] post_alloc_hook
+     0.02%  countwords_par  [kernel.kallsyms]          [k] release_pages
+     0.02%  countwords_par  [kernel.kallsyms]          [k] strlen
+     0.02%  countwords_par  countwords_par             [.] void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) [clone .isra.0]
+     0.02%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee28
+     0.02%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002eefa
+     0.02%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d8a8
+     0.02%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d8ac
+     0.02%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd717
+     0.02%  countwords_par  libstdc++.so.6.0.32        [.] std::basic_filebuf<char, std::char_traits<char> >::underflow()
+     0.02%  countwords_par  [kernel.kallsyms]          [k] __fget_light
+     0.02%  countwords_par  [kernel.kallsyms]          [k] __get_user_8
+     0.02%  countwords_par  [kernel.kallsyms]          [k] __kmem_cache_alloc_node
+     0.02%  countwords_par  [kernel.kallsyms]          [k] _raw_spin_unlock
+     0.02%  countwords_par  [kernel.kallsyms]          [k] balance_dirty_pages_ratelimited_flags
+     0.02%  countwords_par  [kernel.kallsyms]          [k] crypto_shash_update
+     0.02%  countwords_par  [kernel.kallsyms]          [k] down_write
+     0.02%  countwords_par  [kernel.kallsyms]          [k] ext4_buffered_write_iter
+     0.02%  countwords_par  [kernel.kallsyms]          [k] free_unref_page_list
+     0.02%  countwords_par  [kernel.kallsyms]          [k] generic_perform_write
+     0.02%  countwords_par  [kernel.kallsyms]          [k] inotify_merge
+     0.02%  countwords_par  [kernel.kallsyms]          [k] load_balance
+     0.02%  countwords_par  [kernel.kallsyms]          [k] scsi_complete
+     0.02%  countwords_par  [kernel.kallsyms]          [k] stop_this_handle
+     0.02%  countwords_par  [kernel.kallsyms]          [k] vfs_write
+     0.02%  countwords_par  countwords_par             [.] operator new(unsigned long)@plt
+     0.02%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002eee6
+     0.02%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d980
+     0.02%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d98b
+     0.02%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fb53
+     0.02%  countwords_par  libc.so.6                  [.] __mprotect
+     0.02%  countwords_par  libicuuc.so.72.1           [.] icu_72::RuleBasedBreakIterator::DictionaryCache::following(int, int*, int*)
+     0.02%  countwords_par  libicuuc.so.72.1           [.] icu_72::UnicodeString::copyFrom(icu_72::UnicodeString const&, signed char)
+     0.01%  countwords_par  [kernel.kallsyms]          [k] ___slab_alloc
+     0.01%  countwords_par  [kernel.kallsyms]          [k] __folio_alloc
+     0.01%  countwords_par  [kernel.kallsyms]          [k] __read_end_io
+     0.01%  countwords_par  [kernel.kallsyms]          [k] apparmor_file_permission
+     0.01%  countwords_par  [kernel.kallsyms]          [k] blk_done_softirq
+     0.01%  countwords_par  [kernel.kallsyms]          [k] consume_stock
+     0.01%  countwords_par  [kernel.kallsyms]          [k] copyin
+     0.01%  countwords_par  [kernel.kallsyms]          [k] filemap_get_read_batch
+     0.01%  countwords_par  [kernel.kallsyms]          [k] folio_add_lru_vma
+     0.01%  countwords_par  [kernel.kallsyms]          [k] generic_write_end
+     0.01%  countwords_par  [kernel.kallsyms]          [k] handle_pte_fault
+     0.01%  countwords_par  [kernel.kallsyms]          [k] inc_mm_counter
+     0.01%  countwords_par  [kernel.kallsyms]          [k] inode_to_bdi
+     0.01%  countwords_par  [kernel.kallsyms]          [k] inotify_free_event
+     0.01%  countwords_par  [kernel.kallsyms]          [k] jbd2_write_access_granted
+     0.01%  countwords_par  [kernel.kallsyms]          [k] kfree
+     0.01%  countwords_par  [kernel.kallsyms]          [k] ktime_get
+     0.01%  countwords_par  [kernel.kallsyms]          [k] lookup_bh_lru
+     0.01%  countwords_par  [kernel.kallsyms]          [k] obj_cgroup_charge
+     0.01%  countwords_par  [kernel.kallsyms]          [k] policy_node
+     0.01%  countwords_par  [kernel.kallsyms]          [k] pte_offset_map_nolock
+     0.01%  countwords_par  [kernel.kallsyms]          [k] pud_val
+     0.01%  countwords_par  [kernel.kallsyms]          [k] rcu_nocb_unlock_irqrestore.part.0
+     0.01%  countwords_par  [kernel.kallsyms]          [k] strcmp
+     0.01%  countwords_par  [kernel.kallsyms]          [k] uncharge_folio
+     0.01%  countwords_par  [kernel.kallsyms]          [k] up_write
+     0.01%  countwords_par  [kernel.kallsyms]          [k] xas_load
+     0.01%  countwords_par  countwords_par             [.] main
+     0.01%  countwords_par  countwords_par             [.] std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, true>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, true> > >::_M_allocate_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> const&>(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> const&) [clone .isra.0]
+     0.01%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee24
+     0.01%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee3a
+     0.01%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee4f
+     0.01%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d8a4
+     0.01%  countwords_par  libicui18n.so.72.1         [.] icu_72::DecimalFormatSymbols::operator=(icu_72::DecimalFormatSymbols const&)
+     0.01%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd2b3
+     0.01%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd6fd
+     0.01%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000ec88f
+     0.01%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000ed5f0
+     0.01%  countwords_par  libstdc++.so.6.0.32        [.] std::basic_filebuf<char, std::char_traits<char> >::xsputn(char const*, long)
+     0.01%  countwords_par  libstdc++.so.6.0.32        [.] std::ostream::flush()
+     0.01%  countwords_par  libstdc++.so.6.0.32        [.] std::ostream::sentry::sentry(std::ostream&)
+     0.01%  countwords_par  [kernel.kallsyms]          [k] __blk_mq_free_request
+     0.01%  countwords_par  [kernel.kallsyms]          [k] __cond_resched
+     0.01%  countwords_par  [kernel.kallsyms]          [k] __ext4_get_inode_loc
+     0.01%  countwords_par  [kernel.kallsyms]          [k] __ext4_journal_start_sb
+     0.01%  countwords_par  [kernel.kallsyms]          [k] __fsnotify_parent
+     0.01%  countwords_par  [kernel.kallsyms]          [k] __get_obj_cgroup_from_memcg
+     0.01%  countwords_par  [kernel.kallsyms]          [k] __kmalloc
+     0.01%  countwords_par  [kernel.kallsyms]          [k] __kmem_cache_alloc_bulk
+     0.01%  countwords_par  [kernel.kallsyms]          [k] __mem_cgroup_charge
+     0.01%  countwords_par  [kernel.kallsyms]          [k] __mod_lruvec_state
+     0.01%  countwords_par  [kernel.kallsyms]          [k] __radix_tree_lookup
+     0.01%  countwords_par  [kernel.kallsyms]          [k] __zone_watermark_ok
+     0.01%  countwords_par  [kernel.kallsyms]          [k] _raw_read_lock
+     0.01%  countwords_par  [kernel.kallsyms]          [k] blk_update_request
+     0.01%  countwords_par  [kernel.kallsyms]          [k] cache_from_obj
+     0.01%  countwords_par  [kernel.kallsyms]          [k] consume_obj_stock
+     0.01%  countwords_par  [kernel.kallsyms]          [k] copy_page_from_iter_atomic
+     0.01%  countwords_par  [kernel.kallsyms]          [k] dd_finish_request
+     0.01%  countwords_par  [kernel.kallsyms]          [k] ext4_dirty_inode
+     0.01%  countwords_par  [kernel.kallsyms]          [k] ext4_do_update_inode.isra.0
+     0.01%  countwords_par  [kernel.kallsyms]          [k] ext4_fc_track_inode
+     0.01%  countwords_par  [kernel.kallsyms]          [k] fault_in_readable
+     0.01%  countwords_par  [kernel.kallsyms]          [k] filemap_alloc_folio
+     0.01%  countwords_par  [kernel.kallsyms]          [k] folio_mark_accessed
+     0.01%  countwords_par  [kernel.kallsyms]          [k] folio_test_hugetlb
+     0.01%  countwords_par  [kernel.kallsyms]          [k] folio_unlock
+     0.01%  countwords_par  [kernel.kallsyms]          [k] folio_wake_bit
+     0.01%  countwords_par  [kernel.kallsyms]          [k] fsnotify_destroy_event
+     0.01%  countwords_par  [kernel.kallsyms]          [k] inotify_handle_inode_event
+     0.01%  countwords_par  [kernel.kallsyms]          [k] jbd2__journal_start
+     0.01%  countwords_par  [kernel.kallsyms]          [k] kmalloc_slab
+     0.01%  countwords_par  [kernel.kallsyms]          [k] mark_buffer_dirty
+     0.01%  countwords_par  [kernel.kallsyms]          [k] mod_lruvec_page_state
+     0.01%  countwords_par  [kernel.kallsyms]          [k] page_cache_ra_unbounded
+     0.01%  countwords_par  [kernel.kallsyms]          [k] perf_event_mmap_output
+     0.01%  countwords_par  [kernel.kallsyms]          [k] psi_memstall_enter
+     0.01%  countwords_par  [kernel.kallsyms]          [k] refill_obj_stock
+     0.01%  countwords_par  [kernel.kallsyms]          [k] sbitmap_queue_clear
+     0.01%  countwords_par  [kernel.kallsyms]          [k] schedule
+     0.01%  countwords_par  [kernel.kallsyms]          [k] scsi_dec_host_busy
+     0.01%  countwords_par  [kernel.kallsyms]          [k] start_this_handle
+     0.01%  countwords_par  [kernel.kallsyms]          [k] unlock_page
+     0.01%  countwords_par  [kernel.kallsyms]          [k] vm_normal_page
+     0.01%  countwords_par  [kernel.kallsyms]          [k] wbt_done
+     0.01%  countwords_par  countwords_par             [.] merger(ThreadQueue<std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long> > > >&)
+     0.01%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002eede
+     0.01%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ef26
+     0.01%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d76a
+     0.01%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d8bf
+     0.01%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d984
+     0.01%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fc68
+     0.01%  countwords_par  libc.so.6                  [.] __strchr_avx2
+     0.01%  countwords_par  libc.so.6                  [.] __strncpy_avx2
+     0.01%  countwords_par  libc.so.6                  [.] alloc_perturb
+     0.01%  countwords_par  libicui18n.so.72.1         [.] icu_72::DateFormatSymbols::dispose()
+     0.01%  countwords_par  libicui18n.so.72.1         [.] icu_72::number::LocalizedNumberFormatter::LocalizedNumberFormatter(icu_72::number::NumberFormatterSettings<icu_72::number::LocalizedNumberFormatter> const&)
+     0.01%  countwords_par  libicui18n.so.72.1         [.] icu_72::number::LocalizedNumberFormatter::lnfCopyHelper(icu_72::number::LocalizedNumberFormatter const&, UErrorCode&)
+     0.01%  countwords_par  libicuuc.so.72.1           [.] icu_72::UnicodeString::releaseArray()
+     0.01%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd450
+     0.01%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd5e6
+     0.01%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000ec874
+     0.01%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000ec87e
+     0.01%  countwords_par  libstdc++.so.6.0.32        [.] operator delete(void*, unsigned long)
+     0.01%  countwords_par  libstdc++.so.6.0.32        [.] std::__basic_file<char>::xsputn(char const*, long)
+     0.01%  countwords_par  libstdc++.so.6.0.32        [.] std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+     0.01%  countwords_par  libstdc++.so.6.0.32        [.] std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, long)
+     0.01%  countwords_par  libstdc++.so.6.0.32        [.] std::locale::id::_M_id() const
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __blk_flush_plug
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __blk_mq_sched_dispatch_requests
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __es_insert_extent
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __ext4_journal_get_write_access
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __ext4_read_dirblock
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __fdget_pos
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __filemap_get_folio
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __folio_end_writeback
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __folio_throttle_swaprate
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __get_task_ioprio
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __get_vma_policy
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __mark_inode_dirty
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __memcpy
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __put_user_8
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __raw_spin_lock_irqsave
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __rq_qos_done
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __rq_qos_issue
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __rseq_handle_notify_resume
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __tlb_remove_page_size
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __virt_addr_valid
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __x64_sys_write
+     0.00%  countwords_par  [kernel.kallsyms]          [k] __x86_indirect_thunk_rax
+     0.00%  countwords_par  [kernel.kallsyms]          [k] _find_next_zero_bit
+     0.00%  countwords_par  [kernel.kallsyms]          [k] access_error
+     0.00%  countwords_par  [kernel.kallsyms]          [k] alloc_pages
+     0.00%  countwords_par  [kernel.kallsyms]          [k] apparmor_file_mprotect
+     0.00%  countwords_par  [kernel.kallsyms]          [k] bio_alloc_bioset
+     0.00%  countwords_par  [kernel.kallsyms]          [k] bio_associate_blkg_from_css
+     0.00%  countwords_par  [kernel.kallsyms]          [k] bio_free
+     0.00%  countwords_par  [kernel.kallsyms]          [k] blk_mq_put_tag
+     0.00%  countwords_par  [kernel.kallsyms]          [k] blk_stat_add
+     0.00%  countwords_par  [kernel.kallsyms]          [k] blkcg_set_ioprio
+     0.00%  countwords_par  [kernel.kallsyms]          [k] build_detached_freelist
+     0.00%  countwords_par  [kernel.kallsyms]          [k] bvec_free
+     0.00%  countwords_par  [kernel.kallsyms]          [k] change_pmd_range.isra.0
+     0.00%  countwords_par  [kernel.kallsyms]          [k] change_pte_range
+     0.00%  countwords_par  [kernel.kallsyms]          [k] copy_page_regs
+     0.00%  countwords_par  [kernel.kallsyms]          [k] copyout
+     0.00%  countwords_par  [kernel.kallsyms]          [k] count_shadow_nodes
+     0.00%  countwords_par  [kernel.kallsyms]          [k] current_time
+     0.00%  countwords_par  [kernel.kallsyms]          [k] dd_request_merge
+     0.00%  countwords_par  [kernel.kallsyms]          [k] dput
+     0.00%  countwords_par  [kernel.kallsyms]          [k] elv_rqhash_find
+     0.00%  countwords_par  [kernel.kallsyms]          [k] end_page_writeback
+     0.00%  countwords_par  [kernel.kallsyms]          [k] ext4_es_lookup_extent
+     0.00%  countwords_par  [kernel.kallsyms]          [k] ext4_file_write_iter
+     0.00%  countwords_par  [kernel.kallsyms]          [k] ext4_inode_csum
+     0.00%  countwords_par  [kernel.kallsyms]          [k] ext4_inode_csum_set
+     0.00%  countwords_par  [kernel.kallsyms]          [k] ext4_mark_iloc_dirty
+     0.00%  countwords_par  [kernel.kallsyms]          [k] ext4_mpage_readpages
+     0.00%  countwords_par  [kernel.kallsyms]          [k] file_modified
+     0.00%  countwords_par  [kernel.kallsyms]          [k] file_modified_flags
+     0.00%  countwords_par  [kernel.kallsyms]          [k] filemap_get_pages
+     0.00%  countwords_par  [kernel.kallsyms]          [k] flush_tlb_batched_pending
+     0.00%  countwords_par  [kernel.kallsyms]          [k] folio_batch_move_lru
+     0.00%  countwords_par  [kernel.kallsyms]          [k] folio_end_writeback
+     0.00%  countwords_par  [kernel.kallsyms]          [k] free_pages_and_swap_cache
+     0.00%  countwords_par  [kernel.kallsyms]          [k] from_kuid
+     0.00%  countwords_par  [kernel.kallsyms]          [k] fsnotify_handle_inode_event.isra.0
+     0.00%  countwords_par  [kernel.kallsyms]          [k] fsnotify_insert_event
+     0.00%  countwords_par  [kernel.kallsyms]          [k] generic_write_checks
+     0.00%  countwords_par  [kernel.kallsyms]          [k] get_pfn_folio
+     0.00%  countwords_par  [kernel.kallsyms]          [k] get_pte_pfn.isra.0
+     0.00%  countwords_par  [kernel.kallsyms]          [k] hugepage_vma_check
+     0.00%  countwords_par  [kernel.kallsyms]          [k] insert_inode_locked
+     0.00%  countwords_par  [kernel.kallsyms]          [k] jbd2_journal_dirty_metadata
+     0.00%  countwords_par  [kernel.kallsyms]          [k] jbd2_journal_get_write_access
+     0.00%  countwords_par  [kernel.kallsyms]          [k] kmem_cache_alloc_bulk
+     0.00%  countwords_par  [kernel.kallsyms]          [k] kthread_blkcg
+     0.00%  countwords_par  [kernel.kallsyms]          [k] ktime_get_mono_fast_ns
+     0.00%  countwords_par  [kernel.kallsyms]          [k] lockref_put_return
+     0.00%  countwords_par  [kernel.kallsyms]          [k] map_pte
+     0.00%  countwords_par  [kernel.kallsyms]          [k] mas_prev
+     0.00%  countwords_par  [kernel.kallsyms]          [k] mem_cgroup_handle_over_high
+     0.00%  countwords_par  [kernel.kallsyms]          [k] mempool_free
+     0.00%  countwords_par  [kernel.kallsyms]          [k] mod_memcg_state
+     0.00%  countwords_par  [kernel.kallsyms]          [k] mprotect_fixup
+     0.00%  countwords_par  [kernel.kallsyms]          [k] mt_find
+     0.00%  countwords_par  [kernel.kallsyms]          [k] mutex_lock
+     0.00%  countwords_par  [kernel.kallsyms]          [k] native_write_msr
+     0.00%  countwords_par  [kernel.kallsyms]          [k] node_dirty_ok
+     0.00%  countwords_par  [kernel.kallsyms]          [k] obj_cgroup_uncharge
+     0.00%  countwords_par  [kernel.kallsyms]          [k] page_counter_try_charge
+     0.00%  countwords_par  [kernel.kallsyms]          [k] perf_event_mmap_event
+     0.00%  countwords_par  [kernel.kallsyms]          [k] pfn_pte
+     0.00%  countwords_par  [kernel.kallsyms]          [k] pmd_val
+     0.00%  countwords_par  [kernel.kallsyms]          [k] policy_nodemask
+     0.00%  countwords_par  [kernel.kallsyms]          [k] propagate_protected_usage
+     0.00%  countwords_par  [kernel.kallsyms]          [k] psi_memstall_leave
+     0.00%  countwords_par  [kernel.kallsyms]          [k] put_cpu_partial
+     0.00%  countwords_par  [kernel.kallsyms]          [k] raise_softirq
+     0.00%  countwords_par  [kernel.kallsyms]          [k] rcu_cblist_dequeue
+     0.00%  countwords_par  [kernel.kallsyms]          [k] read_pages
+     0.00%  countwords_par  [kernel.kallsyms]          [k] rseq_ip_fixup
+     0.00%  countwords_par  [kernel.kallsyms]          [k] rseq_update_cpu_node_id
+     0.00%  countwords_par  [kernel.kallsyms]          [k] rwsem_spin_on_owner
+     0.00%  countwords_par  [kernel.kallsyms]          [k] sbitmap_get
+     0.00%  countwords_par  [kernel.kallsyms]          [k] scsi_decide_disposition
+     0.00%  countwords_par  [kernel.kallsyms]          [k] scsi_device_unbusy
+     0.00%  countwords_par  [kernel.kallsyms]          [k] scsi_end_request
+     0.00%  countwords_par  [kernel.kallsyms]          [k] scsi_io_completion
+     0.00%  countwords_par  [kernel.kallsyms]          [k] scsi_mq_set_rq_budget_token
+     0.00%  countwords_par  [kernel.kallsyms]          [k] sd_done
+     0.00%  countwords_par  [kernel.kallsyms]          [k] security_vm_enough_memory_mm
+     0.00%  countwords_par  [kernel.kallsyms]          [k] set_pte
+     0.00%  countwords_par  [kernel.kallsyms]          [k] should_failslab
+     0.00%  countwords_par  [kernel.kallsyms]          [k] shrink_many
+     0.00%  countwords_par  [kernel.kallsyms]          [k] slab_update_freelist.isra.0
+     0.00%  countwords_par  [kernel.kallsyms]          [k] submit_bio_wait_endio
+     0.00%  countwords_par  [kernel.kallsyms]          [k] vfs_read
+     0.00%  countwords_par  [kernel.kallsyms]          [k] vma_interval_tree_insert
+     0.00%  countwords_par  [kernel.kallsyms]          [k] wakeup_kswapd
+     0.00%  countwords_par  [kernel.kallsyms]          [k] wb_timer_fn
+     0.00%  countwords_par  [kernel.kallsyms]          [k] wbt_data_dir
+     0.00%  countwords_par  [kernel.kallsyms]          [k] xa_load
+     0.00%  countwords_par  [kernel.kallsyms]          [k] xas_nomem
+     0.00%  countwords_par  countwords_par             [.] operator delete(void*, unsigned long)@plt
+     0.00%  countwords_par  countwords_par             [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)
+     0.00%  countwords_par  countwords_par             [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator=(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&) [clone .isra.0]
+     0.00%  countwords_par  countwords_par             [.] std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> > >::vector<std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, false, true>, void>(std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, false, true>, std::__detail::_Node_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned long>, false, true>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> > const&)
+     0.00%  countwords_par  countwords_par             [.] void std::__introsort_loop<__gnu_cxx::__normal_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>*, std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> > > >, long, __gnu_cxx::__ops::_Iter_less_iter>(__gnu_cxx::__normal_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>*, std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> > > >, __gnu_cxx::__normal_iterator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>*, std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> > > >, long, __gnu_cxx::__ops::_Iter_less_iter) [clone .isra.0]
+     0.00%  countwords_par  ld-linux-x86-64.so.2       [.] _dl_new_object
+     0.00%  countwords_par  ld-linux-x86-64.so.2       [.] do_lookup_x
+     0.00%  countwords_par  ld-linux-x86-64.so.2       [.] intel_check_word.constprop.0
+     0.00%  countwords_par  ld-linux-x86-64.so.2       [.] strcmp
+     0.00%  countwords_par  libarchive.so.13.6.2       [.] archive_read_next_header
+     0.00%  countwords_par  libboost_locale.so.1.74.0  [.] icu_72::UnicodeString::countChar32(int, int) const@plt
+     0.00%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee2c
+     0.00%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ee4a
+     0.00%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000002ef37
+     0.00%  countwords_par  libboost_locale.so.1.74.0  [.] 0x0000000000034f23
+     0.00%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d78a
+     0.00%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d7e6
+     0.00%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004d8db
+     0.00%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004f9fd
+     0.00%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fb72
+     0.00%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fba6
+     0.00%  countwords_par  libboost_locale.so.1.74.0  [.] 0x000000000004fc13
+     0.00%  countwords_par  libboost_locale.so.1.74.0  [.] 0x0000000000059550
+     0.00%  countwords_par  libboost_thread.so.1.74.0  [.] boost::detail::set_tss_data(void const*, void (*)(void (*)(void*), void*), void (*)(void*), void*, bool)
+     0.00%  countwords_par  libc.so.6                  [.] __GI___fileno
+     0.00%  countwords_par  libc.so.6                  [.] __GI___nptl_deallocate_stack
+     0.00%  countwords_par  libc.so.6                  [.] __GI___pthread_disable_asynccancel
+     0.00%  countwords_par  libc.so.6                  [.] __brk
+     0.00%  countwords_par  libc.so.6                  [.] __malloc_arena_thread_freeres
+     0.00%  countwords_par  libc.so.6                  [.] __strcpy_avx2
+     0.00%  countwords_par  libc.so.6                  [.] __tzset
+     0.00%  countwords_par  libc.so.6                  [.] pthread_mutex_lock@@GLIBC_2.2.5
+     0.00%  countwords_par  libc.so.6                  [.] pthread_mutex_unlock@@GLIBC_2.2.5
+     0.00%  countwords_par  libicui18n.so.72.1         [.] icu_72::Calendar::createInstance(icu_72::TimeZone*, icu_72::Locale const&, UErrorCode&)
+     0.00%  countwords_par  libicui18n.so.72.1         [.] icu_72::Locale::Locale(icu_72::Locale const&)@plt
+     0.00%  countwords_par  libicui18n.so.72.1         [.] icu_72::MeasureUnit::~MeasureUnit()
+     0.00%  countwords_par  libicui18n.so.72.1         [.] icu_72::number::IntegerWidth::IntegerWidth(short, short, bool)
+     0.00%  countwords_par  libicui18n.so.72.1         [.] icu_72::number::impl::NumberPropertyMapper::oldToNew(icu_72::number::impl::DecimalFormatProperties const&, icu_72::DecimalFormatSymbols const&, icu_72::number::impl::DecimalFormatWarehouse&, icu_72::number::impl::DecimalFormatProperties*, UErrorCode&)
+     0.00%  countwords_par  libicui18n.so.72.1         [.] 0x0000000000151af2
+     0.00%  countwords_par  libicuuc.so.72.1           [.] icu_72::Locale::getBaseName() const
+     0.00%  countwords_par  libicuuc.so.72.1           [.] icu_72::Locale::getKeywordValue(char const*, char*, int, UErrorCode&) const
+     0.00%  countwords_par  libicuuc.so.72.1           [.] icu_72::Normalizer::normalize(icu_72::UnicodeString const&, UNormalizationMode, int, icu_72::UnicodeString&, UErrorCode&)
+     0.00%  countwords_par  libicuuc.so.72.1           [.] icu_72::Replaceable::~Replaceable()
+     0.00%  countwords_par  libicuuc.so.72.1           [.] icu_72::UnicodeString::UnicodeString(icu_72::UnicodeString const&)
+     0.00%  countwords_par  libicuuc.so.72.1           [.] res_getArrayItem_72
+     0.00%  countwords_par  libicuuc.so.72.1           [.] ulocimp_getCountry_72(char const*, char const**, UErrorCode&)
+     0.00%  countwords_par  libicuuc.so.72.1           [.] uprv_min_72
+     0.00%  countwords_par  libicuuc.so.72.1           [.] ustr_hashCharsN_72
+     0.00%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd278
+     0.00%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd27d
+     0.00%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd28a
+     0.00%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd2ab
+     0.00%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd413
+     0.00%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000cd6f8
+     0.00%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000ec870
+     0.00%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000ec887
+     0.00%  countwords_par  libicuuc.so.72.1           [.] 0x00000000000ec896
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] free@plt
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] malloc@plt
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] std::__basic_file<char>::xsgetn(char*, long)
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create(unsigned long&, unsigned long)
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_aux(unsigned long, unsigned long, unsigned long, char)
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] std::basic_filebuf<char, std::char_traits<char> >::_M_convert_to_external(char*, long)
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] std::basic_filebuf<char, std::char_traits<char> >::overflow(int)
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::_Ios_Openmode)
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] std::locale::classic()
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] std::ostream& std::ostream::_M_insert<unsigned long>(unsigned long)
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<unsigned long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] 0x00000000000e6320
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] 0x0000000000136f04
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] 0x000000000013b211
+     0.00%  countwords_par  libstdc++.so.6.0.32        [.] 0x000000000019f450
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#
